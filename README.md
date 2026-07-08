@@ -48,16 +48,29 @@ Future improvements to this pipeline could include:
 
 ```text
 ├── data/
-│   ├── mapping.csv.txt                     # Species name to tree tip label map
-│   ├── taxa_list.txt                       # Plain list of total analyzed taxa
-│   ├── phenotypic_data_DATA.csv            # Brain/body mass, EQ, and social trait scores
-│   ├── phenotypic_data_TIP_DATES.csv       # Fossil calibration dates (FAD/LAD) for taxa
-│   ├── phenotypic_data_NODE_DATES.csv      # Node age calibrations for molecular clock
-│   ├── language_ceteceans.fasta            # Unaligned nucleotide sequences for language subset
-│   ├── language_ceteceans_aligned.fasta    # Clustal Omega aligned sequences
-│   ├── languageConcat.phy                  # PHYLIP formatted alignment for RAxML
-│   ├── languageConcat.nex                  # NEXUS formatted alignment for downstream analysis
-│   └── language-Raxml-part.txt             # Gene partition boundaries (AQP6, FBXO2, FOXP1, etc.)
+│   ├── metadata/                           
+│   │   └── mapping.csv.txt                 # Mapping tips to full names
+│   │
+│   ├── raw_sequences/
+│   │   ├── all_overlaps_trimmed_clean.fasta# Cleaned intermediate sequence (invalid chars replaced)
+│   │   ├── cetaceans.fasta                 # Broad cetacean raw sequences
+│   │   ├── clean_cetacean.fasta.zip        # Cleaned broad cetacean sequences 
+│   │   └── language_ceteceans.fasta        # Filtered 9-species raw sequences
+│   │
+│   ├── processed_alignments/
+│   │   ├── language_ceteceans_aligned.fasta# Clustal Omega output (9 species)
+│   │   ├── languageConcat.phy              # RAxML matrix (9 species)
+│   │   ├── languageConcat.nex              # NEXUS matrix (9 species)
+│   │   ├── language-Raxml-part.txt         # Gene boundaries (9 species)
+│   │   ├── cetaceans_aligned.fasta         # Clustal Omega output (20 species)
+│   │   ├── cetaceansConcat.phy             # RAxML matrix (20 species)
+│   │   ├── cetaceansConcat.nex             # NEXUS matrix (20 species)
+│   │   └── cetaceans-Raxml-part.txt        # Gene boundaries (20 species)
+│   │
+│   └── phenotypic_data/
+│       ├── phenotypic_data.xlsx - DATA.csv       # Brain mass & complexity scores (for ASR)
+│       ├── phenotypic_data.xlsx - TIP_DATES.csv  # FAD/LAD dates (for calibration)
+│       └── phenotypic_data.xlsx - Node_Dates.csv # Internal node ages (for calibration)
 ├── scripts/
 │   ├── final.Rmd                           # MASTER NOTEBOOK: R code, SLURM commands, and full phylogenetic pipeline
 │   │
