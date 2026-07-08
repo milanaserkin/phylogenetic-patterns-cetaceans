@@ -1,0 +1,948 @@
+#NEXUS
+[Data written by write.nexus.data.R, Tue Dec 10 15:33:23 2024]
+BEGIN DATA;
+  DIMENSIONS NTAX=9 NCHAR=7448;
+  FORMAT DATATYPE=DNA MISSING=? GAP=- INTERLEAVE=YES;
+  MATRIX
+    DdelSJR         atggagtcaggcaggcgcagcttggccaagacgctggtgtgccggctctgcacgaccatcagcaaggctgtgtttgccga
+    Gmac39091       atggagtcaggcaggcgcagcttggccaagacgctggtgtgccggctctgcacgaccatcagcaaggctgtgtttgccga
+    Ggri            atggagtcaggcaggcgcagcttggccaagacgctggtgtgccggctctgcacgaccatcagcaaggctgtgtttgccga
+    Oorc            atggagtcaggcgggcgcagcttggccaagacgctggtgtgccggctctgcacgaccatcagcaaggctgtgtttgccga
+    Pmac            atggagtcagacaggcgcagcttggccaagatgctggtgtgccggctctggacgaccatcagcaaggctctgtttgccga
+    Pcra123188      atggagtcaggcaggcgcagcttggccaagacgctggtgtgccggctctgcacaaccatcagcaaggctgtgtttgccga
+    Scoe            atggagtcaggcaggcgcagcttggccaagacgctggtgtgccggctctgcacgaccatcagcaaggctgtgtttgccga
+    Ttru            atggagtcaggcaggcgcagcttggccaagacgctggtgtgccggctctgcacgaccatcagcaaggctgtgtttgccga
+    Hippo           atggagtcaggcaggcgcagcttggccaaggcgctggcgtgccggctctggacgaccatcagcaaggctctgtttgccga
+
+    DdelSJR         gttcctggccacggggctgtacgtgttctttggcgtgggctcggctctgagatggcccttggcgcttccctctatgctgc
+    Gmac39091       gttcctggccacggggctgtacgtgttctttggcgtgggctcggctctgagatggtccttggcgcttccctctatgctgc
+    Ggri            gttcctggccacggggctgtacgtgttctttggcgtgggctcggctctgagatggcccttggcgcttccctctatgctgc
+    Oorc            gttcctggccacggggctgtacgtgttctttggcgtgggctcggctctgagatggcccttggcgcttccctctatgctgc
+    Pmac            gttcctggccacggggctgtacgtgttcttcggcgtgggctcggctctgagatggtccttggcgcttccctctatgctgc
+    Pcra123188      gttcctggccacggggctgtacgtgttctttggcgtgggctcggctctgagatggcccttggcgcttccctctatgctgc
+    Scoe            gttcctggccacggggctgtacgtgttctttggcgtgggctcggctctgagatggcccttggcgcttccctctatgctgc
+    Ttru            gttcctggccacggggctgtacgtgttctttggcgtgggctcggctctgagatggcccttggcgcttccctctatgctgc
+    Hippo           gttcctggccacggggctgtacgtgttttttggcgtgggctcggctctgagatggcccttgtcacttccctctgtgctgc
+
+    DdelSJR         aggttgccatcaccttcaacctggccacggccgtgatcgtgcagatcacctggaaggctagtggggcccacgtcaaccct
+    Gmac39091       aggttgccatcaccttcaacctggccacggccgtgatcgtgcagatcacctggaaggctagtggggcccacgtcaaccct
+    Ggri            aggttgccatcaccttcaacctggccacggccgtgatcgtgcagatcacctggaaggctagtggggcccacgtcaaccct
+    Oorc            aggttgccatcaccttcaacctggccacggccgtgatcgtgcagatcacctggaaggctagtggggcccacgtcaaccct
+    Pmac            agattgccatcaccttcaacctggccacggccgtgatcgtgcagatcacctggaaggctagtggggcccacgtcaaccct
+    Pcra123188      aggttgccatcaccttcaacctggccacggccgtgatcgtgcagatcacctggaaggctagtggggcccacgtcaaccct
+    Scoe            aggttgccatcaccttcaacctggccacggccgtgatcgtgcagatcacctggaaggctagtggggcccacgtcaaccct
+    Ttru            aggttgccatcaccttcaacctggccacggccgtgatcgtgcagatcacctggaaggctagtggggcccacgtcaaccct
+    Hippo           agattgccatcaccttcaacctggccacggccgtgatcgtgcaaatcacctggaaggccagtggggcccacgtcaaccct
+
+    DdelSJR         gctgtgacgctggccttcctcgtgggctcccaaatctccctgccccgtgctgtggcctacgtggctgcccagctggcagg
+    Gmac39091       gctgtgacgctggccttcctcgtgggctcccaaatctccctgccccgtgctgtggcctacgtggctgcccagctggcagg
+    Ggri            gctgtgacgctggccttcctcgtgggctcccaaatctccctgccccgtgctgtggcctacgtggctgcccagctggcagg
+    Oorc            gctgtgacactggccttcctcgtgggctcccaaatctccctgccccgtgctgtggcctacgtggctgcccagctggcagg
+    Pmac            gctgtgacgctggccttcctcgtgggctcccaaatctccctgccccgtgctgtggcctacgtggctgcccagctggcagg
+    Pcra123188      gctgtgacgctggccttcctcgtgggctcccaaatctccctgccccgtgctgtggcctacgtggctgcccagctggcagg
+    Scoe            gctgtgacgctggccttcctcgtgggctcccaaatctccctgccccgtgctgtggcctacgtggctgcccagctggcagg
+    Ttru            gctgtgacgctggccttcctcgtgggctcccaaatctccctgccccgtgctgtggcctacgtggctgcccagctggcagg
+    Hippo           gccgtgacgctggccttcctcgtgggctcccagatctccctgccccgtgctgtggcctatgtggctgcccagctggcggg
+
+    DdelSJR         ggccacggtgggggctgctctgctttacggggtcacacccggggacatccgagacacctttggggtcaacgtggtccgga
+    Gmac39091       ggccacggcgggggctgctctgctttacggggtcacgcccggggacatccgagacacctttggggtcaacgtggtccgga
+    Ggri            ggccacggcgggggctgctctgctttacggggtcacgcccggggacatccgagacacctttggggtcaacgt---ccgga
+    Oorc            ggccacggcgggggctgctctgctttacggggtcacgcccggggacatccgagacacctttggggtcaacgtggtccgga
+    Pmac            ggccacagcgggggctgctctgctttacggggtcacgcccggggacatccgagagaactttggggtcaacgtggtccgga
+    Pcra123188      ggccacggcgggggctgctctgctttacggggtcacgcccggggacatccgagacacctttggggtcaacgtggtccgga
+    Scoe            ggccacggcgggggctgctctgctttacggggtcacgcccggggacatccgagacacctttggggtcaacgtggtccgga
+    Ttru            ggccacggtgggggctgctctgctttacggggtcacacccggggacatccgagacacctttggggtcaacgtggtccgga
+    Hippo           ggccacggcgggggctgctctgctttacggggtctcgcctggggacatccgagagaactttggggtcaacgtgnnnnnnn
+
+    DdelSJR         gcagcgtctccacgggccaggcggtggcagtggagctagtcctgaccctgcagcttgtgctctgcgtttttgcttccacc
+    Gmac39091       gcagcgtctccatgggccaggcggtggcagtggagctagtcctgaccctgcagcttgtgctctgcgtttttgcttccacc
+    Ggri            gcagcgtctccacgggccaggcggtggcagtggagctagtcctgaccctgcagcttgtgctctgcgtttttgcttccacc
+    Oorc            gcagcgtctccacgggccaggcggtggcagtggagctagtcctgaccctgcagcttgtgctctgcgtttttgcttccacc
+    Pmac            gcagcgtctccacgggtcaggcggtggcagtggagctagtcctgaccctgcagcttgtgctctgcgtttttgcttccacc
+    Pcra123188      gcagcgtctccatgggccaggcggtggcagtggagctcgtcctgaccctgcagcttgtgctctgcgtttttgcttccacc
+    Scoe            gcagcgtctccacgggccaggcggtggcagtggagctagtcctgaccctgcagcttgtgctctgcgtttttgcttccacc
+    Ttru            gcagcgtctccacgggccaggcggtggcagtggagctagtcctgaccctgcagcttgtgctctgcgtttttgcttccacc
+    Hippo           nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn---------------n--nn-n---
+
+    DdelSJR         gacagcagacagactactggctccccagctgccacgattggagcctctgtggcagtgggccacctcattgggat------
+    Gmac39091       gacagcagacagactactggctccccagctgccacgattggagcctctgtggcagtgggccacctcattgggat------
+    Ggri            gacagcagacagactactggctccccagctgccacgattggagcctctgtggcagtgggccacctcattgggat------
+    Oorc            gacagcagacagactactggctccccagctgccacgattggagcctctgtggcagtgggccacctcattgggatctactt
+    Pmac            gacagcagacagactactggctccccagctgccacgattggagcctctgtggcagtgggccacctcattgggatctactt
+    Pcra123188      gacagcagacagactactggctccccagctgccacgattggagcctctgtggcagtgggccacctcattgggat------
+    Scoe            gacagcagacagactactggctccccagctgccacgattggagcctctgtggcagtgggccacctcattgggat------
+    Ttru            gacagcagacagactactggctccccagctgccacgattggagcctctgtggcagtgggccatctcattgggat------
+    Hippo           nnn--nnn--n-n-nnnn-n-nn-n-n-nn-nn--nnnnn-n--nnnnnn--n-nnn---nnnnnnn-------------
+
+    DdelSJR         ---------------------------------------------------------------------------cttct
+    Gmac39091       ---------------------------------------------------------------------------cttct
+    Ggri            ---------------------------------------------------------------------------cttct
+    Oorc            caccggctgctccatgaacccagcccgctcctttggttctgctgtcatcgtcgggaagttcgcagtccactggatcttct
+    Pmac            caccggctgctccatgaacccagcccgctcctttggttctgctgtcatcgtcgggaagttcgcagtccactggatcttct
+    Pcra123188      ---------------------------------------------------------------------------cttct
+    Scoe            ---------------------------------------------------------------------------cttct
+    Ttru            ---------------------------------------------------------------------------cttct
+    Hippo           ------------------------nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnatcttct
+
+    DdelSJR         gggtgggacccctgacgggggctgtcctggcttcgctgatctacaactttatcctgttccctgacaccaagaccctggcc
+    Gmac39091       gggtgggacccctgacgggggctgtcctggcttcgctgatctacaactttatcctgttccctgacaccaagaccctggcc
+    Ggri            gggtgggacccctgacgggggctgtcctggcttcgctgatctacaactttatcctgttccctgacaccaagaccctggcc
+    Oorc            gggtgggacccctgacgggggctgtcctggcttcgctgatctacaactttatcctgttccctgacaccaagaccctggcc
+    Pmac            gggtgggacccctgacgggggctgtcctggcttcgctgatctacaactttatcctgttccctgacaccaagaccctggcg
+    Pcra123188      gggtgggacccctgacgggggctgtcctggcttcgctgatctacaactttatcctgttccctgacaccaagaccctggcc
+    Scoe            gggtgggacccctgacgggggctgtcctggcttcgctgatctacaactttatcctgttccctgacaccaagaccctggcc
+    Ttru            gggtgggacccctgacgggggctgtcctggcttcgctgatctacaactttatcctgttccctgacaccaagaccctggct
+    Hippo           gggtgggacctctgttgggtgctgtcctggcttcgctgatctacaactttatcctgttccctgacaccaagaccctggcc
+
+    DdelSJR         cagcgacttgccatcctcacaggcactgcggaggtgcaggaggtagaaggggtggagccccagaaggaagaatctcagtc
+    Gmac39091       cagcgacttgccatcctcacaggcactgcggaggtgcaggaggtagaaggggtggagccccagaaggaagaatctcagtc
+    Ggri            cagcgacttgccatcctcacaggcactgcggaggtgcaggaggtagaaggggtggagccccagaaggaagaatctcagtc
+    Oorc            cagcgacttgccatcctcacaggcactgcggaggtgcaggaggtagaaggggtggagccccagaaggaagaatctcagtc
+    Pmac            cagcgacttgccattctcacaggcactgcggaggtggaggaggtagaaggggtggagccccagaagaaagaatcccagtc
+    Pcra123188      cagcgacttgccatcctcacaggcactgcggaggtgcaggaggtagaaggggtggagccccagaaggaagaatctcagtc
+    Scoe            cagcgacttgccatcctcacaggcactgcggaggtgcaggaggtagaaggggtggagccccagaaggaagaatctcagtc
+    Ttru            cagcgacttgccatcctcacaggcactgcggaggtgcaggaggtagaaggggtggagccccagaaggaagaatctcagtc
+    Hippo           caacgactggccatcctcatgggcactgcggaggtggagaaagtggaaggggtggagccccggaagaaagaatctcagtc
+
+    DdelSJR         cagttcagaggacactgaaatggagaatgtgtgtcaggtggcatagag----------------------agcgtgggcc
+    Gmac39091       cagttcagaggacactgaaatggagaatgtgtgtcaggtggcatagag----------------------gagc------
+    Ggri            cagttcagaggacactgaaatggagaatgtgtgtcaggtggcatagag----------------------agcgtgggcc
+    Oorc            cagttcagaggacactgaaatggagaatgtgtgtcaggtggcatagatggacggagacggtgacccagagagcgtgggcc
+    Pmac            cagttcagaggacactgaaatggagaatgtgtgtcaggtggcatagatggacggagacggtgacccagagagcgtgggcc
+    Pcra123188      cagttcagaggacactgaaatggagaatgtgtgtcaggtggcataggg----------------------ag--------
+    Scoe            cagttcagaggacactgaaatggagaatgtgtgtcaggtggcatagag----------------------agcgtgggcc
+    Ttru            cagttcagaggacactgaaatggagaatgtgtgtcaggtggcatagatggacggagacggtgacccagagagcgtgggcc
+    Hippo           cagttcagaggacactgaaatggatagtgtgtgtcaggtggcgtagnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+    DdelSJR         agccggaggaggcgagcccggaggagcagcagcaggaggccggcgcggaggaggcgagcggcggggaggagcggcccgag
+    Gmac39091       ---------------------------agcagcaggaggctggcgcggaggaggcgagcggcggggaggagcggcccgag
+    Ggri            agccggaggaggcgagcccggaggagcagcagcaggaggctggcgcggaggaggcgagcggcggggaggagcggcccgag
+    Oorc            agccggaggaggcgagcccggaggagcagcagcaggaggctggcgcggaggaggcgagcggcggggaggagcggcccgag
+    Pmac            agccggaggaggcgagcccggaggggccgcaggaggaggccggcgccgaggaggcgagcggcggggaggagcggcccgag
+    Pcra123188      --------------------------------------------------------------------------------
+    Scoe            agccggaggaggcgagcccggaggagcagcagcaggaggccggcgcggaggaggcgagcggcggggaggagcggcccgag
+    Ttru            agccggaggaggcgagcccggaggagcagcagcaggaggccggcgcggaggaggcgagcggcggggaggagcggcccgag
+    Hippo           nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+    DdelSJR         gacgagagggaggaggaggaggccgcgtacct-ggacg----------agctgcccgag-ccgctgctgcttcgcgtgct
+    Gmac39091       gacgaggaggaggaggaggaggccgcgtacct-ggacg----------agctgcccgag-ccgctgctgcttcgcgtgct
+    Ggri            gacgagggggaggaggaggaggccgcgtacct-ggacg----------agctgcccgag-ccgctgctgcttcgcgtgct
+    Oorc            gacgagggggaggaggaggaggccgcgtacct-ggacg----------agctgcccgag-ccgctgctgcttcgcgtgct
+    Pmac            gacgagggcgaggaggaggaggaggaggaggaggcggcgtacgtgcacgagctgcccgagccgctgctgcttcgtgtgct
+    Pcra123188      ---------------gaggaggccgcgtacct-ggacg----------agctgcccgag-ccgctgctgcttcgcgtgct
+    Scoe            gacgagggggaggaggaggaggccgcgtacct-ggacg----------agctgcccgag-ccgctgctgcttcgcgtgct
+    Ttru            gacgagggggaggaggaggaggccgcgtacct-ggacg----------agctgcccgag-ccgctgctgcttcgcgtgct
+    Hippo           nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn----------nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+    DdelSJR         ggccgagctgcc-cgccgccgagctggtgcaggcctgccgcctgg-tgtgcctgcgctggaaggggctggtcga-cggc-
+    Gmac39091       ggccgagctgcc-cgccgccgagctggtgcaggcctgccgcctgg-tgtgcctgcgctggaaggagctggtcga-cggc-
+    Ggri            ggccgagctgcc-cgccgccgagctggtgcaggcctgccgcctgg-tgtgcctgcgctggaaggagctggtcga-cggc-
+    Oorc            ggccgagctgcc-cgccgccgagctggtgcaggcctgccgcctgg-tgtgcctgcgctggaaggagctggtcga-cggc-
+    Pmac            ggccgagctgcc-cgccgcccagctggtgcaggcctgccgcct-ggtgtgcctgcgctggaaggagctggtcg--acggc
+    Pcra123188      ggccgagctgcc-cgccgccgagctggtgcaggcctgccgcctgg-tgtgcctgcgctggaaggagctggtcga-cggc-
+    Scoe            ggccgagctgcc-cgccgccgagctggtgcaggcctgccgcctgg-tgtgcctgcgctggaaggagctggtcga-cggc-
+    Ttru            ggccgagctgcc-cgccgccgagctggtgcaggcctgccgcctgg-tgtgcctgcgctggaaggagctggtcga-cggc-
+    Hippo           nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+    DdelSJR         tct-----------------------------------------------------------------------------
+    Gmac39091       tctcccctgtggctgctcaagtgtcagcaagagggtctggtacccgagggcggccccgaggaagagcgcgaccactggca
+    Ggri            tctcccctgtggctgcttaagtgtcagcaagagggtctggtacccgagggcggccccgaggaagagcgcgaccactggca
+    Oorc            tctcccctgtggctgctcaagtgtcagcaagagggtctggtacccgagggcggccccgaggaagagcgcgaccactggca
+    Pmac            tctcccctgtggctgctcaagtgccagcaagagggtctggtacccgagggcggccccgaggatgagcgcgaccactggca
+    Pcra123188      tctcccctgtggctgctcaagtgtcagcaagagggtctggtacccgagggcggccccgaggaagagcgcgaccactggca
+    Scoe            tctcccctgtggctgctcaagtgtcagcaagagggtctggtacccgagggcggccccgaggaagagcgcgaccactggca
+    Ttru            tctcccctgtggctgctcaagtgtcagcaagagggtctggtacccgagggcggccccgaggaagagcgcgaccactggca
+    Hippo           nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+    DdelSJR         -----------------------------------------------------------aggacttggagggctggtgcg
+    Gmac39091       gcagttctacttcctgagcaagaggcggcgcaacctgctacgcaacccgtgcggggaagaggacttggagggctggtgcg
+    Ggri            gcagttctacttcctgagcaagaggcggcgcaacctgctacgcaacccgtgcggggaagaggacttggagggctggtgcg
+    Oorc            gcagttctacttcctgagcaagaggcggcgcaacctgctacgcaacccgtgcggggaagaggacttggagggctggtgcg
+    Pmac            gcagttctacttcctgagcaagaggcggcgcaacctgctgcgcaacccgtgcggggaagaggacttggagggctggtgcg
+    Pcra123188      gcagttctacttcctgagcaagaggcggcgcaacctgctacgcaacccgtgcggggaagaggacttggagggctggtgcg
+    Scoe            gcagttctacttcctgagcaagaggcggcgcaacctgctacgcaacccgtgcggggaagaggacttggagggctggtgcg
+    Ttru            gcagttctacttcctgagcaagaggcggcgcaacctgctacgcaacccgtgcggggaagaggacttggagggctggtgcg
+    Hippo           nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnaggacttggagggttggtgcg
+
+    DdelSJR         acgtggagcacggtggggacggctggagggtggaggagctgcccggagactgcggggtggaattcatccacgacgagagt
+    Gmac39091       acgtggagcacggtggggacggctggagggtggaggagctgcccggagactgcggggtggaattcatccacgacgagagt
+    Ggri            acgtggagcacggtggggacggctggagggtggaggagctgcccggagactgcggggtggaattcatccacgacgagagt
+    Oorc            acgtggagcacggtggggacggctggagggtggaggagctgcccggagactgcggggtggaattcatccacgacgagagt
+    Pmac            acgtggagcacggcggggacggctggagggtggaggagctgcccggagactgcggggtggaattcatccacgatgagagt
+    Pcra123188      acgtggagcacggtggggacggctggagggtggaggagctgcccggagactgcggggtggaattcatccacgacgagagt
+    Scoe            acgtggagcacggtggggacggctggagggtggaggagctgcccggagactgcggggtggaattcatccacgacgagagt
+    Ttru            acgtggagcacggtggggacggctggagggtggaggagctgcccggagactgcggggtggaattcatccacgacgagagt
+    Hippo           acgtggagcacggtggggacggctggagggtggaggagctgcccggagactgtggggtggaattcatccacgatgagagc
+
+    DdelSJR         gtcaagaagtacttcgcctcctccttcgagtggtgtcgcaaagcgcaggtcattgacctgcaggctgagggctactggga
+    Gmac39091       gtcaagaagtacttcgcctcctccttcgagtggtgtcgcaaagcgcaggtcattgacctgcaggctgagggctactggga
+    Ggri            gtcaagaagtacttcgcctcctccttcgannnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Oorc            gtcaagaagtacttcgcctcctccttcgagtggtgtcgcaaagcgcaggtcattgacctgcaggctgagggctactggga
+    Pmac            gtcaagaagtacttcgcctcctccttcgagtggtgtcgcaaagcgcaggtcattgacctgcaggctgagggttactggga
+    Pcra123188      gtcaagaagtacttcgcctcctccttcgannnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Scoe            gtcaagaagtacttcgcctcctccttcgannnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Ttru            gtcaagaagtacttcgcctcctccttcgagtggtgtcgcaaagcgcaggtcattgacctgcaggctgagggctactggga
+    Hippo           gtcaagaagtacttcgcctcctccttcgannnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+    DdelSJR         ggagctgctggacaccactcagccggccatcgtggtgaaggactggtactcgggccgcggagacgccggctgcctgtacg
+    Gmac39091       ggagctgctggacaccactcagccggccatcgtggtgaaggactggtactcgggccgcagagacgccggctgcctgtacg
+    Ggri            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnngtactcgggccgcagagacgccggctgcctgtacg
+    Oorc            ggagctgctggacaccactcagccggccatcgtggtgaaggactggtactcgggccgcagagacgccggctgcctgtacg
+    Pmac            ggagctgctggacaccacccagccggccatcatggtgaaggactggtactcgggccgcagagacgccggctgcctgtacg
+    Pcra123188      nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnngtactcgggccgcagagacgccggctgcctgtacg
+    Scoe            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnngtactcgggccgcagagacgccggctgcctgtacg
+    Ttru            ggagctgctggacaccactcagccggccatcgtggtgaaggactggtactcgggccgcagagacgccggctgcctgtacg
+    Hippo           nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnngtactcgagccgcagagacgctggctgcctgtacg
+
+    DdelSJR         agctcacggtgaagctgctgtcagagaacgaggacgtgctggccgagttcaacagcgggcaggtggcagtgccacaagac
+    Gmac39091       agctcacggtgaagctgctgtcagagcacgaggacgtgctggccgagttcaacagcgggcaggtggcagtgccacaagac
+    Ggri            agctcacggtgaagctgctgtcagagcacgaggacgtgctggccgagttcaacagcgggcaggtggcagtgccacaagac
+    Oorc            agctcacggtgaagctgctgtcagagcacgaggacgtgctggccgagtttaacagcgggcaggtggcagtgccacaagac
+    Pmac            agctcacggtgaagctgctgtcggagcacgaggacgtgctggccgagttcaacagcgggcaggtggcagtgccacaggac
+    Pcra123188      agctcacggtgaagctgctgtcagagcacgaggacgtgctggccgagttcaacagcgggcaggtggcagtgccacaagac
+    Scoe            agctcacggtgaagctgctgtcagagaacgaggacgtgctggccgagttcaacagcgggcaggtggcagtgccacaagac
+    Ttru            agctcacggtgaagctgctgtcagagaacgaggacgtgctggccgagttcaacagcgggcaggtggcagtgccacaagac
+    Hippo           agctcacggtgaagctgctgtcggagcacgaggacgtgctggccgagttcaacagcgggcaggtggcagtgccgcaagac
+
+    DdelSJR         agcgacgacggtggctggattgagnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Gmac39091       agcgacgacggtggctggattgagnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Ggri            agcgacgacggtggctggattgagatctcccacaccttcaccgactatgggccgggcgtccgcttcgtccgcttcgagca
+    Oorc            agcgacgacggtggctggattgagatctcccacaccttcaccgactatgggccgggcgtccgcttcgtccgcttcgagca
+    Pmac            agcgacgacggtggctggattgagatctcccacaccttcaccgactatgggccgggcgtccgcttcgtccgcttcgagca
+    Pcra123188      agcgacgacggtggctggattgagatctcccacaccttcaccgactatgggccgggcgtccgcttcgtccgcttcgagca
+    Scoe            agcgacgacggtggctggattgagnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Ttru            agcgacgacggtggctggattgagatctcccacaccttcaccgactatgggccgggcgtccgcttcgtccgcttcgagca
+    Hippo           agcgacgacggtggctggattgagatctcccacaccttcaccgactacgggccaggcgtccgcttcgtccgcttcgagca
+
+    DdelSJR         nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnna
+    Gmac39091       nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnna
+    Ggri            cggcggacaggactgcgtctactggaagggctggttcggggcccgggtgaccaacagcagcgtgtgggtggagccctgan
+    Oorc            cggcggacaggactgcgtctactggaagggctggttcggggcccgggtgaccaacagcagcgtgtgggtggagccctgaa
+    Pmac            cggcggacaggactgcgtctactggaagggctggttcggggcccgggtgaccaacagcagcgtgtgggtggagccctgaa
+    Pcra123188      cggcggacaggactgcgtctactggaagggctggttcggggcccgggtgaccaacagcagcgtgtgggtggagccctgaa
+    Scoe            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnna
+    Ttru            cggcggacaggactgcgtctactggaagggctggttcggggcccgggtgaccaacagcagcgtgtgggtggagccctgaa
+    Hippo           cgggggacaggactgcgtctactggaagggctggttcggggcccgggtgaccaacagcagcgtgtgggtggagccctgan
+
+    DdelSJR         tgagttggtcctcacacccccggagtttaatcctctgcttctatactctttcattgctctcttcaacatgcctggcannn
+    Gmac39091       tgagttggtcctcacacccccggagtttaatcctctgcttctacactctttcattgctctcttcaacatgcctggcannn
+    Ggri            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Oorc            tgagttggtcctcacatccccggagtttaatcctctgcttctacactctttcattgctctcttcaacatgcctggcatat
+    Pmac            tgagttggtcctcgcacccccggagtttaatcctctgcttctacactctttcattgctctcttcaacatgcctggcatat
+    Pcra123188      tgagttggtcctcacacccccggagtttaatcctctgcttctacactctttcattgctctcttcaacatgcctggcannn
+    Scoe            tgagttggtcctcacacccccggagtttaatcctctgcttctatactctttcattgctctcttcaacatgcctggcannn
+    Ttru            tgagttggtcctcacacccccggagtttaatcctctgcttctatactctttcattgctctcttcaacatgcctggcatat
+    Hippo           nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+    DdelSJR         nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnggtagttattgcccaactacctgtggaattgcagattt
+    Gmac39091       nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnggtagttattgcccaactacctgtggaattgcagattt
+    Ggri            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnggtagttattgcccaactacctgtggaattgcagattt
+    Oorc            attgctacccgagacaactgctgcatcttagatgaaagatttggtagttattgcccaactacctgtggaattgcagattt
+    Pmac            attgctacccgagacaactgctgcatcttagatgaaagatttggtagttattgcccaactacctgtggaattgcagattt
+    Pcra123188      nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnggtagttattgcccaactacctgtggaattgcagattt
+    Scoe            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnggtagttattgcccaactacctgtggaattgcagattt
+    Ttru            attgctacccgagacaactgctgcatcttagatgaaagatttggtagttattgcccaactacctgtggaattgcagattt
+    Hippo           nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnggtagttattgcccaactacctgtggagttgcagattt
+
+    DdelSJR         cctgtctacttaccaaaccagtgtagataaggatctacagaatttggaaggcatcttacgtcaggttgagaacaagacat
+    Gmac39091       cctgtctacttaccaaaccagtgtagacaaggatctacagaatttggaaggcatcttacgtcaggttgagaacaagacat
+    Ggri            cctgtctagttaccaaaccagtgtagacaaggatctacagaatttggaaggcatcttacgtcaggttgagaacaagacat
+    Oorc            cctgtctacttaccaaaccagtgtagacaaggatctacagaatttggaaggcatcttacgtcaggttgagaacaagacat
+    Pmac            cctgtctacttaccaaaccaatgtagacaaggatctacagaatttggaaggcatcttacgtcaggttgagaacaagacat
+    Pcra123188      cctgtctacttaccaaaccagtgtagacaaggatctacagaatttggaaggcatcttacgtcaggttgagaacaagacat
+    Scoe            cctgtctacttaccaaaccagtgtagacaaggatctacagaatttggaaggcatcttacgtcaggttgagaacaagacat
+    Ttru            cctgtctacttaccaaaccagtgtagacaaggatctacagaatttggaaggcatcttacgtcaggttgagaacaagacat
+    Hippo           cctgtctaattaccaaaccagtgtagacaaggatctacagaatttggaaagcattgttcatgaggttgagaacaagacat
+
+    DdelSJR         cagaagccaaagagttggtcaaagcaatccagatcagctaccactctgatggaccagcaaagccaaatgggatagagagt
+    Gmac39091       cagaagccaaagagttggtcaaagcaatccagatcagctaccaccctgatggaccagcaaagccaannnnnnnnnnnnnn
+    Ggri            cagaagccaaagagttggtcaaagcaatccagatcagctaccactctgatggaccagcaaagccaannnnnnnnnnnnnn
+    Oorc            cagaagccaaagagttggtcaaagcaatccagatcagctaccgctctgatggaacagcaaagccaaatgggatagagagt
+    Pmac            cagaagccagagagttggtcaaagaaatccagatcagctaccgctctgatggaccagcaaagccaagtgggatagagagt
+    Pcra123188      cagaagccaaagagttggtcaaagaaatccagatcagctaccactctgatggaccagcaaagccaannnnnnnnnnnnnn
+    Scoe            cagaagccaaagagttggtcaaagcaatccagatcagctaccactctgatggaccagcaaagccaannnnnnnnnnnnnn
+    Ttru            cagaagccaaagagttggtcaaagcaatccagatcagctaccactctgatggaccagcaaagccaaatgggatagagagt
+    Hippo           cagaagccagggagctggtcaaagcaatccaaatcagctacaaccctgatgaaccagaaaagccaannnnnnnnnnnnnn
+
+    DdelSJR         gctaccaagatttccaagaaaatgttggaagaaattatgaaatacgaaacattgatttcaacacatgaatcaacagttcg
+    Gmac39091       nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Ggri            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Oorc            gctaccaagatttccaagaaaatgttggaagaaattatgaaatacgaaacattgatttcaacacatgaatcaacagttcg
+    Pmac            gctaccaagaattccaagaaaatgttggaagaaattatgaaatacgaaacattgatttcaacacatgaatcaacagttcg
+    Pcra123188      nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Scoe            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Ttru            gctaccaagatttccaagaaaatgttggaagaaattatgaaatacgaaacattgatttcaacacatgaatcaacagttcg
+    Hippo           nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+    DdelSJR         nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Gmac39091       atttttgcaggaaatatataattcaaataatcaaaaaatcatcaacctgaaactgaaagtggtccaactggaagcaaagt
+    Ggri            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Oorc            atttttgcaggaaatatataattcaaataatcaaaaaatcatcaacctgaaacagaaagtggtccaactggaagcaaagt
+    Pmac            atttttgcaggaaatatataattcaaataatcaaaaaatcatcaacctgaaacagagagtggtccaactggaagcaaagt
+    Pcra123188      atttttgcaggaaatatataattcaaataatcaaaaaatcatcaacctgaaactgaaagtggtccaactggaagcaaagt
+    Scoe            atttttgcaggaaatatataattcaaataatcaaaaaatcatcaacctgaaacagaaagtggtccaactggaagcaaact
+    Ttru            atttttgcaggaaatatataattcaaataatcaaaaaatcatcaacctgaaacagaaagtggtccaactggaagcaaact
+    Hippo           nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+    DdelSJR         nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnattgtcaagacattgccaataagggggcc
+    Gmac39091       gtcaggaaccttgtcaagatacagtgaaaatacatgatacaactgggaaagattgtcaagacattgccaataagggggcc
+    Ggri            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnattgtcaagacattgccaataagggggcc
+    Oorc            gtcaggaaccttgtcaagatacagtgaaaatacatgatacaactgggaaagattgtcaagacattgccaataagggggcc
+    Pmac            gtcaggaaccttgtcaagatacagtgaaaatacatgatacaactgggaaagattgtcaagacattgccaataagggggcc
+    Pcra123188      gtcaggaaccttgtcaagatacagtgaaaatacatgatacaactgggaaagattgtcaagacattgccaataagggggcc
+    Scoe            gtcaggaaccttgtcaagatacagtgaaaatacatgatacaactgggaaagattgtcaagacattgccaataagggggcc
+    Ttru            gtcaggaaccttgtcaagatacagtgaaaatacatgatacaactgggaaagattgtcaagacattgccaataagggggcc
+    Hippo           nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnattgtcaagacattgccaataagggggcc
+
+    DdelSJR         agagagagtgggctttactttatcaaacctctgaaagctaagcagcagttcttagtatactgtgaaattgatgggtctgg
+    Gmac39091       agagagagtgggctttactttatcaaacctctgaaagctaagcagcagttcttagtatactgtgaaattgatgggtctgg
+    Ggri            agagagagtgggctttactttatcaaacctctgaaagctaagcagcagttcttagtatactgtgaaattgatgggtctgg
+    Oorc            agagagagtgggctttactttatcaaacctctgaaagctaagcagcagttcttagtctactgtgaaattgatgggtctgg
+    Pmac            agagagagtgggctttactttatcaaacctctgaacgctaagcagcagttcttaatctactgtgaaattgatgggtctgg
+    Pcra123188      agagagagtgggctttactttatcaaacctctgaaagctaagcagcagttcttagtatactgtgaaattgatgggtctgg
+    Scoe            agagagagtgggctttactttatcaaacctctgaaagctaagcagcagttcttagtatactgtgaaattgatgggtctgg
+    Ttru            agagagagtgggctttactttatcaaacctctgaaagctaagcagcagttcttagtatactgtgaaattgatgggtctgg
+    Hippo           agagagagtgggctttactttatcaaacctctgaaagctaagcagcagttcttagtctactgtgaaattgatgggtctgg
+
+    DdelSJR         aaatggatggactgtgtttcagaagaggcttgatggcagtgtggatttcaagaaaaactggattcaatataaagaagggt
+    Gmac39091       aaatggatggactgtgtttcagaagaggcttgatggcagtgtggatttcaagaaaaactggattcaatataaagaagggt
+    Ggri            aaatggatggactgtgtttcagaagaggcttgatggcagtgtggatttcaagaaaaactggattcaatataaagaagggt
+    Oorc            aaatggatggactgtgtttcagaagaggcttgatggcagtgtggatttcaagaaaaactggattcaatataaagaagggt
+    Pmac            aaatggatggactgtgtttcagaagaggcttgatggcagtgtggatttcaagaaaaactggattcaatataaggaagggt
+    Pcra123188      aaatggatggactgtgtttcagaagaggcttgatggcagtgtggatttcaagaaaaactggattcaatataaagaagggt
+    Scoe            aaatggatggactgtgtttcagaagaggcttgatggcagtgtggatttcaagaaaaactggattcaatataaagaagggt
+    Ttru            aaatggatggactgtgtttcagaagaggcttgatggcagtgtggatttcaagaaaaactggattcaatataaagaagggt
+    Hippo           aaatggatggaccgtgtttcagaagaggcttgatggcactttggatttcaagaaaaactggattcaatataaagaagggt
+
+    DdelSJR         ttggacatctgtctcctactggaaacacagaattttggctgggaaatgagaagattcatttgataagcacacagtctacc
+    Gmac39091       ttggacatctgtctcctactggaaacacagaattttggctgggaaatgagaagattcatttgataagcacacagtctacc
+    Ggri            ttggacatctgtctcctactggaaacacagaattttggctgggaaatgagaagattcatttgataagcacacagtctacc
+    Oorc            ttggacatctgtctcctactggaaacacagaattttggctgggaaatgagaagattcatttgataagcacacagtctacc
+    Pmac            ttggacatctgtctcctactggaaacacagaattttggctgggaaatgagaagattcatttgataagcacacagtctacc
+    Pcra123188      ttggacatctgtctcctactggaaacacagaattttggctgggaaatgagaagattcatttgataagcacacagtctacc
+    Scoe            ttggacatctgtctcctactggaaacacagaattttggctgggaaatgagaagattcatttgataagcacacagtctacc
+    Ttru            ttggacatctgtctcctactggaaacacagaattttggctgggaaatgagaagattcatttgataagcacacagtctacc
+    Hippo           ttggacatctgtctcctactggaaacacagaattttggctgggaaatgagaagattcacttgataagcacacagtctacc
+
+    DdelSJR         atcccatatgtattaagagtgcagttggaggattggaatggcagaaccagtactgcagactatgctacgttcagggtgac
+    Gmac39091       atcccatatgtattaagagtgcagttggaggattggaatggcagaaccagtactgcagactatgctacgttcagggtgac
+    Ggri            atcccatatgtattaagagtgcagttggaggattggaatggcagaaccagtactgcagactatgctacgttcagggtgac
+    Oorc            atcccatatgtattaagagtgcagttggaggattggaatggcagaaccagtactgcagactatgctacgttcagggtgac
+    Pmac            atcccatatgtattaagagtgcagttggaggactggaatggcagaaccagtactgcagactattctacgttcagggtgac
+    Pcra123188      atcccatatgtattaagagtgcagttggaggattggaatggcagaaccagtactgcagactatgctacgttcagggtgac
+    Scoe            atcccatatgtattaagagtgcagttggaggattggaatggcagaaccagtactgcagactatgctacgttcagggtgac
+    Ttru            atcccatatgtattaagagtgcagttggaggattggaatggcagaaccagtactgcagactatgctacgttcagggtgac
+    Hippo           atcccatacgtattaagagtgcagttggaggactggagtggcaaaacc-agactgcagactatgctacattccgggtcgc
+
+    DdelSJR         aggtgaaaatgacaaataccgcatgacatatgcctactttattggtggagatgctggagatgcgtttgatggctacgatt
+    Gmac39091       aggtgaaaatgacaaataccgcatgacatatgcctactttattggtggagatgctggagatgcgtttgatggctacgatt
+    Ggri            aggtgaaaatgacaaataccgcatgacatatgcctactttattggtggagatgctggagatgcgtttgatggctacgatt
+    Oorc            aggtgaaaatgacaaataccgcatgacatatgcctactttattggtggagatgctggagatgcgtttgatggctacgatt
+    Pmac            agatgaaagcgacaaataccgcttgacatacgcctacttcattggtggagatgctggagatgcgtttgatggctacgatt
+    Pcra123188      aggtgaaaatgacaaataccgcatgacatatgcctactttattggtggagatgctggagatgcgtttgatggctacgatt
+    Scoe            aggtgaaaatgacaaataccgcatgacatatgcctactttattggtggagatgctggagatgcgtttgatggctacgatt
+    Ttru            aggtgaaaatgacaaataccgcatgacatatgcctactttattggtggagatgctggagatgcgtttgatggctacgatt
+    Hippo           gggtgaaaatgacaaataccgcatgacatatgcctacttcattagtggagatgctggagacgcgtttgatggctatgatt
+
+    DdelSJR         ttggcgaggatactagtgacaagtttttcacatcccacaatggcatgcagttcagtacctgggacaatgacaacgataag
+    Gmac39091       ttggcgaggatattagtgacaagtttttcacatcccacaatggcatgcagttcagtacctgggacaatgacaacgataag
+    Ggri            ttggcgaggatattagtgacaagtttttcacatcccacaatggcatgcagttcagtacctgggacaatgacaacgataag
+    Oorc            ttggagaggatactagtgacaagtttttcacatcccacaatggcatgcagttcagtacctgggacaatgacaacgataag
+    Pmac            ttggcgaggatactagtgacaagtttttcacatcccacaatggcatgcagttcagtacctgggacaatgacaatgataag
+    Pcra123188      ttggcgaggatattagtgacaagtttttcacatcccacaatggcatgcagttcagtacctgggacaatgacaacgataag
+    Scoe            ttggcgaggatactagtgacaagtttttcacatcccacaatggcatgcagttcagtacctgggacaatgacaacgataag
+    Ttru            ttggcgaggatactagtgacaagtttttcacatcccacaatggcatgcagttcagtacctgggacaatgacaacgataag
+    Hippo           ttggtgaggatcctagtgacaagtttttcacatcccacaatggcatgcagttcagtacctgggacaacgacaacgataag
+
+    DdelSJR         tttgaaggcaactgcgctgaacaggatggatctggttggtggatgaacaaatgtcatgctggccacctcaatggaattta
+    Gmac39091       tttgaaggcaactgcgctgaacaggatggatctggttggtggatgaacaaatgtcatgctggccacctcaatggaattta
+    Ggri            tttgaaggcaactgcgctgaacaggatggatctggttggtggatgaacaaatgtcatgctggccacctcaatggaattta
+    Oorc            tttgaaggcaactgcgctgaacaggatggatctggttggtggatgaacaaatgtcatgctggccacctcaatggaattta
+    Pmac            tttgaaggcaactgtgctgaacaggatggatctggttggtggatgaacaaatgtcatgctggccacctcaatggaattta
+    Pcra123188      tttgaaggcaactgcgctgaacaggatggatctggttggtggatgaacaaatgtcatgctggccacctcaatggaattta
+    Scoe            tttgaaggcaactgcgctgaacaggatggatctggttggtggatgaacaaatgtcatgctggccacctcaatggaattta
+    Ttru            tttgaaggcaactgcgctgaacaggatggatctggttggtggatgaacaaatgtcatgctggccacctcaatggaattta
+    Hippo           tttgacggcaactgtgctgaacaggatggatctggttggtggatgaacaaatgtcatgctggccacctcaatggagttta
+
+    DdelSJR         ttaccaaggtggcacttactcaaaaacatctactactaatggttatgataatggcattatttgggccacttggaaatccc
+    Gmac39091       ttaccaagg--gcacttactcaaaaacatctactactaatggttatgataatggcattatttgggccacttggaaatccc
+    Ggri            ttaccaagg--gcacctactcaaaaacatctactactaatggttatgataatggcattatttgggccacttggaaatccc
+    Oorc            ttaccaaggcggcacttactcaaaaacatctactactaatggttatgataatggcattatttgggccacttggaaatccc
+    Pmac            ttaccaaggtggcacttactcaaaaacatctactcctaagggttatgataatggcattatttgggccacttggaaatccc
+    Pcra123188      ttaccaagg--gcacctactcaaaaacatctactactaatggttatgataatggcattatttgggccacttggaaatccc
+    Scoe            ttaccaaggtggcacttactcaaaaacatctactactaatggttatgataatggcattatttgggccacttggaaatccc
+    Ttru            ttaccaaggtggcacttactcaaaaacatctactactaatggttatgataatggcattatttgggccacttggaaatccc
+    Hippo           ttaccaaggtggcacttactcaaaagcatctactcctaatggttacgataatggcattatttgggccacttggaaatccc
+
+    DdelSJR         ggtggtattcaatgaagaaaaccaccatgaaattaatcccatataacagaatcgccattggagaaggacagcaacaccac
+    Gmac39091       ggtggtattcaatgaagaaaaccaccatgaaattaatcccatataacagaatcgccattggagaaggacagcaataccac
+    Ggri            ggtggtattcaatgaagaaaaccaccatgaaattaatcccatataacagaatcgccattggagaaggacagcaacaccac
+    Oorc            ggtggtattcaatgaagaaaaccaccatgaaattaatcccatataacagaatcgccattggagaaggacagcaacaccac
+    Pmac            ggtggtattcaatgaagacaaccaccatgaaactaatcccatataacagaatcgccattggagaaggacagcagcaccac
+    Pcra123188      ggtggtattcaatgaagaaaaccaccatgaaattaatcccatataacagaatcgccattggagaaggacagcaacaccac
+    Scoe            ggtggtattcaatgaagaaaaccaccatgaaattaatcccatataacagaatcaccattggagaaggacagcaacaccac
+    Ttru            ggtggtattcaatgaagaaaaccaccatgaaattaatcccatataacagaatcgccattggagaaggacagcaacaccac
+    Hippo           ggtggtattccatgaagaaaaccaccatgaagttaatcccatataacagaatcgccattggagaaggacagcagcaccac
+
+    DdelSJR         cttgggggagccaaacaggtcggaccagaacatcatgttgaaatagaatatgactaact---tcaagtggcaagacagct
+    Gmac39091       cttgggggagccaaacaggtcagaccagaacatcatgttgaaatagaatatgactaannnnnnnnnnnnnnnnnnnnnnn
+    Ggri            cttgggggagccaaacaggtcagaccagaacatcatgttgaaatagaatatgactaannnnnnnnnnnnnnnnnnnnnnn
+    Oorc            cttgggggagccaaacaggtcagaccagaacatcatgatgaaatagaatatgactaagcgcttcaagtggcaagacagct
+    Pmac            cttgggggagccaaacaggtcagaccagaacaccaagttgaaacagaatatgactaagcacttcaagtggcaagacagct
+    Pcra123188      cttgggggagccaaacaggtcagaccagaacatcatgttgaaatagaatatgactaannnnnnnnnnnnnnnnnnnnnnn
+    Scoe            cttgggggagccaaacaggtcggaccagaacatcatgttgaaatagaatatgactaannnnnnnnnnnnnnnnnnnnnnn
+    Ttru            cttgggggagccaaacaggtcggaccagaacatcatgttgaaatagaatatgactaagcgcttcaagtggcaagacagct
+    Hippo           cttgggggagccaaacaggttggaatagaacaccatgtcgaaatagaatatgactaannnnnnnnnnnnnnnnnnnnnnn
+
+    DdelSJR         tcttctccagcagcaac---agcagcaagttagtggattaaagtctcccaagaggaatgacaaacaaccagcccttcagg
+    Gmac39091       nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnng
+    Ggri            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnng
+    Oorc            tcttctccagcagcaacagcagcaag---ttagtggattaaagtctcccaagaggaatgacaaacaaccagcccttcagg
+    Pmac            tcttctccagcagcaac---agcagcaagttagtggattaaagtctcccaagaggaatgacaaacagccagcccttcagg
+    Pcra123188      nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnng
+    Scoe            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnng
+    Ttru            tcttctccagcagcaac---agcagcaagttagtggattaaagtctcccaagaggaatgacaaacaaccagcccttcagg
+    Hippo           nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnng
+
+    DdelSJR         ttcccgtgtcagtggctatgatgacacctcaagttatcactccccagcaaatgcagcagatcctccagcaacaagtgctg
+    Gmac39091       ttcccgtgtcagtggctatgatgacacctcaagttatcactccccagcaaatgcagcagatcctccagcaacaagtgctg
+    Ggri            ttcccgtgtcagtggctatgatgacacctcaagttatcactccccagcaaatgcagcagatcctccagcaacaagtgctg
+    Oorc            ttcccgtgtcagtggctatgatgacacctcaagttatcactccccagcaaatgcagcagatcctccagcaacaagtgctg
+    Pmac            ttcccgtgtcagtggctatgatgacacctcaagttatcactccccagcaaatgcagcagatcctccagcaacaagtgctg
+    Pcra123188      ttcccgtgtcagtggctatgatgacacctcaagttatcactccccagcaaatgcagcagatcctccagcaacaagtgctg
+    Scoe            ttcccgtgtcagtggctatgatgacacctcaagttatcactccccagcaaatgcagcagatcctccagcaacaagtgctg
+    Ttru            ttcccgtgtcagtggctatgatgacacctcaagttatcactccccagcaaatgcagcagatcctccagcaacaagtgctg
+    Hippo           ttcccgtgtcagtggctatgatgacacctcaagttatcactccccagcaaatgcagcagatcctccagcaacaagtgctg
+
+    DdelSJR         agccctcagcagctccaggttctcctccagcagcagcaggccctcatgcttcagcagnnnnnnnnnnnnnnnnnnnnnnn
+    Gmac39091       agccctcagcagctccaggttctcctccagcagcagcaggccctcatgcttcagcagcagcagcttcaagagttttataa
+    Ggri            agccctcagcagctccaggttctcctccagcagcagcaggccctcatgcttcagcagcagcagcttcaagagttttataa
+    Oorc            agccctcagcagctccaggttctcctccagcagcagcaggccctcatgcttcagcagcagcagcttcaagagttttataa
+    Pmac            agccctcagcagctccaggttctcctccagcagcagcaggccctcatgcttcagcagcagcagcttcaagagttttataa
+    Pcra123188      agccctcagcagctccaggttctcctccagcagcagcaggccctcatgcttcagcagcagcagcttcaagagttttataa
+    Scoe            agccctcagcagctccaggttctcctccagcagcagcaggccctcatgcttcagcagnnnnnnnnnnnnnnnnnnnnnnn
+    Ttru            agccctcagcagctccaggttctcctccagcagcagcaggccctcatgcttcagcagcagcagcttcaagagttttataa
+    Hippo           agccctcagcagctccaggttctcctccagcagcagcaggccctcatgcttcaacagcagcagcttcaagagttttataa
+
+    DdelSJR         nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnncaacagcaggtgg
+    Gmac39091       aaaacaacaggaacagttgca---gcttcaacttttacaacaacatgctggaaaacagcctaaagagcaacagcaggtgg
+    Ggri            aaaacaacaggaacagttgca---gcttcaacttttacaacaacatgctggaaaacagcctaaagagcaacagcaggtgg
+    Oorc            aaaacaacaggaacagttgca---gcttcaacttttacaacaacatgctggaaaacagcctaaagagcaacagcaggtgg
+    Pmac            aaaacaacaggaacagttgcag---cttcaacttttacaacaacatgctggaaaacagcctaaagagcaacagcaggtgg
+    Pcra123188      aaaacaacaggaacagttgca---gcttcaacttttacaacaacatgctggaaaacagcctaaagagcaacagcaggtgg
+    Scoe            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnncaacagcaggtgg
+    Ttru            aaaacaacaggaacagttgca---gcttcaacttttacaacaacatgctggaaaacagcctaaagagcaacagcaggtgg
+    Hippo           aaaacaacaggaacagttgcagcttcaacttttacaacaacaacatgctggaaaacagcctaaagagcaacagcaggtgg
+
+    DdelSJR         ctacccagcagttggctttccagcagcaacttttacagatgcagcagctacagcagcaacaccttctgtctttgcagcgc
+    Gmac39091       ctacccagcagttggctttccagcagcaacttttacagatgcagcagctacagcagcaacaccttctgtctttgcagcgc
+    Ggri            ctacccagcagttggctttccagcagcaacttttacagatgcagcagctacagcagcaacaccttctgtctttgcagcgc
+    Oorc            ctacccagcagttggctttccagcagcaacttttacagatgcagcagctacagcagcaacaccttctgtctttgcagcgc
+    Pmac            ctacccagcagttggctttccagcagcaacttttacagatgcagcagctacagcagcaacaccttctgtctttgcagcgc
+    Pcra123188      ctacccagcagttggctttccagcagcaacttttacagatgcagcagctacagcagcaacaccttctgtctttgcagcgc
+    Scoe            ctacccagcagttggctttccagcagcaacttttacagatgcagcagctacagcagcaacaccttctgtctttgcagcgc
+    Ttru            ctacccagcagttggctttccagcagcaacttttacagatgcagcagctacagcagcaacaccttctgtctttgcagcgc
+    Hippo           ctacccagcagttggctttccagcagcagcttctacagatgcagcagttacagcaacaacaccttctgtctctgcagcgt
+
+    DdelSJR         caaggccttctaacaatccagccggggcagcctgcccttcccctccaaccccttgctcaaggcatgattccaacagaact
+    Gmac39091       caaggccttctaacaatccagccggggcagcctgcccttcccctccaaccccttgctcaaggcatgattccaacagaact
+    Ggri            caaggccttctaacaatccagccggggcagcctgcccttcccctccaaccccttgctcaaggcatgattccaacagaact
+    Oorc            caaggccttctaacaatccagccggggcagcctgcccttcccctccaaccccttgctcaaggcatgattccaacagaact
+    Pmac            caaggccttctaacaatccagccggggcagcctgcccttcccctccaaccccttgctcaaggcatgattccaacagaact
+    Pcra123188      caaggccttctaacaatccagccggggcagcctgcccttcccctccaaccccttgctcaaggcatgattccaacagaact
+    Scoe            caaggccttctaacaatccagccggggcagcctgcccttcccctccaaccccttgctcaaggcatgattccaacagaact
+    Ttru            caaggccttctaacaatccagccggggcagcctgcccttcccctccaaccccttgctcaaggcatgattccaacagaact
+    Hippo           caaggccttttaacaatccagccagggcagcccgcccttcccctccaacccctcgctcaaggcatgattccaacagaact
+
+    DdelSJR         gcagcagctctggaaagaagtgacaagtgctcatacgacagaagaaaccacgggcaacaatcacagcagtttggatctga
+    Gmac39091       gcagcagctctggaaagaagtgacaagtgctcatacgacagaagaaaccacgggcaacaatcacagcagtttggatctga
+    Ggri            gcagcagctctggaaagaagtgacaagtgctcatacgacagaagaaaccacgggcaacaatcacagcagtttggatctga
+    Oorc            gcagcagctctggaaagaagtgacaagtgctcatacgacagaagaaaccacgggcaacaatcacagcagtttggatctga
+    Pmac            gcagcagctctggaaagaagtgacaagtgctcatacgacagaagaaaccacgggcaacaatcacagcagtttggatctga
+    Pcra123188      gcagcagctctggaaagaagtgacaagtgctcatacgacagaagaaaccacgggcaacaatcacagcagtttggatctga
+    Scoe            gcagcagctctggaaagaagtgacaagtgctcatacgacagaagaaaccacgggcaacaatcacagcagtttggatctga
+    Ttru            gcagcagctctggaaagaagtgacaagtgctcatacgacagaagaaaccacgggcaacaatcacagcagtttggatctga
+    Hippo           gcagcagctctggaaagaagtgacaagtgctcatacgacagaagaaaccacgggcaacaatcacagcagtttggatctga
+
+    DdelSJR         ccacgacatgcgtctcttcctctgcaccttccaagacctccttaataatgaacccacatgcctctaccaacggacagctg
+    Gmac39091       ccacgacatgcgtctcttcctctgcaccttccaagacctccttaataatgaacccacatgcctctaccaacggacagctg
+    Ggri            ccacgacatgcgtctcttcctctgcaccttccaagacctccttaataatgaacccacatgcctctaccaacggacagctg
+    Oorc            ccacgacatgcgtctcttcctctgcaccttccaagacctccttaataatgaacccacatgcctctaccaacggacagctg
+    Pmac            ccacgacatgtgtctcttcctctgcaccttccaagacctccttaataatgaacccacatgcctctaccaacggacagctg
+    Pcra123188      ccacgacatgcgtctcttcctctgcaccttccaagacctccttaataatgaacccacatgcctctaccaacggacagctg
+    Scoe            ccacgacatgcgtctcttcctctgcaccttccaagacctccttaataatgaacccacatgcctctaccaacggacagctg
+    Ttru            ccacgacatgcgtctcttcctctgcaccttccaagacctccttaataatgaacccacatgcctctaccaacggacagctg
+    Hippo           ccacgacatgtgtctcctcctctgcaccttccaagacctccttaataatgaacccacatgcctctaccaacggacagctg
+
+    DdelSJR         tcagtccacactcccaaaagggaaagtttgtcccacgaggagcatccccatagccatcctctgtatggacatggcgtatg
+    Gmac39091       tcagtccacactcccaaaagggaaagtttgtcccacgaggagcatccccatagccatcctctgtatggacatggcgtatg
+    Ggri            tcagtccacactcccaaaagggaaagtttgtcccacgaggagcatccccatagccatcctctgtatggacatggcgtatg
+    Oorc            tcagtccacactcccaaaagggaaagtttgtcccacgaggagcatccccatagccatcctctgtatggacatggcgtatg
+    Pmac            tcagtccacactcccaaaagggaaagtttgtcccatgaggagcacccccatagccatcctctgtatggacacggcgtatg
+    Pcra123188      tcagtccacactcccaaaagggaaagtttgtcccacgaggagcatccccatagccatcctctgtatggacatggcgtatg
+    Scoe            tcagtccacactcccaaaagggaaagtttgtcccacgaggagcatccccatagccatcctctgtatggacatggcgtatg
+    Ttru            tcagtccacactcccaaaagggaaagtttgtcccacgaggagcatccccatagccatcctctgtatggacatggcgtatg
+    Hippo           tcagtccacactcccaaaagggaaagtttgtcccacgaggagcatccccatagccatcctctgtatggacatggcgtgtg
+
+    DdelSJR         caagtggcctggctgtgaagcagtgtgtgaagatttccagtcatttctaaaacatctcaacagtgagcatgcgctggacg
+    Gmac39091       caagtggcctggctgtgaagcagtgtgtgaagatttccagtcatttctaaaacatctcaacagtgagcatgcgctggacg
+    Ggri            caagtggcctggctgtgaagcagtgtgtgaagatttccagtcatttctaaaacatctcaacagtgagcatgcgctggacg
+    Oorc            caagtggcctggctgtgaagcagtgtgtgaagatttccagtcatttctaaaacatctcaacagtgagcatgcgctggacg
+    Pmac            caagtggcctggctgtgaagcggtgtgtgaagatttccaatcatttctaaaacatctcaacagtgagcatgcgctggacg
+    Pcra123188      caagtggcctggctgtgaagcagtgtgtgaagatttccagtcatttctaaaacatctcaacagtgagcatgcgctggacg
+    Scoe            caagtggcctggctgtgaagcagtgtgtgaagatttccagtcatttctaaaacatctcaacagtgagcatgcgctggacg
+    Ttru            caagtggcctggctgtgaagcagtgtgtgaagatttccagtcatttctaaaacatctcaacagtgagcatgcgctggacg
+    Hippo           caagtggcctggctgtgaagcagtgtgtgaagatttccaatcatttctaaaacatctcaacagtgagcatgcgctggacg
+
+    DdelSJR         atagaagtacagcccaatgtagagtacaaatgcaggttgtacagcagttagagctacagcttgcaaaagacaaagagcgc
+    Gmac39091       atagaagtacagcccaatgtagagtacaaatgcaggttgtacagcagttagagctacagcttgcaaaagacaaagagcgc
+    Ggri            atagaagtacagcccaatgtagagtacaaatgcaggttgtacagcagttagagctacagnnnnnnnnnnnnnnnnnnnnn
+    Oorc            atagaagtacagcccaatgtagagtacaaatgcaggttgtacagcagttagagctacagcttgcaaaagacaaagagcgc
+    Pmac            atagaagtacagcccaatgtagagtacaaatgcaggttgtacagcagttagagctacagcttgcaaaagacaaagagcgc
+    Pcra123188      atagaagtacagcccaatgtagagtacaaatgcaggttgtacagcagttagagctacagcttgcaaaagacaaagagcgc
+    Scoe            atagaagtacagcccaatgtagagtacaaatgcaggttgtacagcagttagagctacagcttgcaaaagacaaagagcgc
+    Ttru            atagaagtacagcccaatgtagagtacaaatgcaggttgtacagcagttagagctacagcttgcaaaagacaaagagcgc
+    Hippo           atagaagtacagcccaatgtagagtacaaatgcaggttgtacagcagttagagctacagnnnnnnnnnnnnnnnnnnnnn
+
+    DdelSJR         ctgcaagccatgatgacccacctgcacgtgaagtctacggaacccaaaactgcccctcagcccctgaatctggtatcaag
+    Gmac39091       ctgcaagccatgatgacccacctgcacgtgaagtctacggaacccaaaactgcccctcagcccctgaatctggtatcaag
+    Ggri            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnctgaatctggtatcaag
+    Oorc            ctgcaagccatgatgacccacctgcacgtgaagtctacggaacccaaaactgcccctcagcccctgaatctggtatcaag
+    Pmac            ctgcaagccatgatgacccacctgcacgtgaagtctacggaacccaaaactgcccctcagcccctgaatctggtatcaag
+    Pcra123188      ctgcaagccatgatgacccacctgcacgtgaagtctacggaacccaaaactgcccctcagcccctgaatctggtatcaag
+    Scoe            ctgcaagccatgatgacccacctgcacgtgaagtctacggaacccaaaactgcccctcagcccctgaatctggtatcaag
+    Ttru            ctgcaagccatgatgacccacctgcacgtgaagtctacggaacccaaaactgcccctcagcccctgaatctggtatcaag
+    Hippo           nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnctgaatctggtatcaag
+
+    DdelSJR         tgtcacactctccaagtctgcatcagaggcttctccacagagcttacctcatactcctacgacccccactgcccccatca
+    Gmac39091       tgtcacactctccaagtctgcatcagaggcttctccacagagcttacctcatactcctacgacccccactgcccccatca
+    Ggri            tgtcacactctccaagtctgcatcagaggcttctccacagagcttacctcatactcctacgacccccactgcccccatca
+    Oorc            tgtcacactctccaagtctgcatcagaggcttctccacagagcttacctcatactcctacgacccccactgcccccatca
+    Pmac            tgtcacactctccaagtctgcgtcagaggcttctccacagagcttacctcatactcctacgacccccactgcccccatca
+    Pcra123188      tgtcacactctccaagtctgcatcagaggcttctccacagagcttacctcatactcctacgacccccactgcccccatca
+    Scoe            tgtcacactctccaagtctgcatcagaggcttctccacagagcttacctcatactcctacgacccccactgcccccatca
+    Ttru            tgtcacactctccaagtctgcatcagaggcttctccacagagcttacctcatactcctacgacccccactgcccccatca
+    Hippo           tgtcacactctccaaatctgcatcagaggcttccccacagagcttacctcatactcctacgacccccaccgcccccatca
+
+    DdelSJR         ctcccgtcacccaaggcccctccgtcatcaccaccaccagcatgcacacggtgggacccatccgcaggcggtactcagac
+    Gmac39091       ctcccgtcacccaaggcccctccgtcatcaccaccaccagcatgcacacggtgggacccatccgcaggcggtactcagac
+    Ggri            ctcccgtcacccaaggcccctccgtcatcaccaccaccagcatgcacacggtgggacccatccgcaggcggtactcagac
+    Oorc            ctcccgtcacccaaggcccctccgtcatcaccaccaccagcatgcacacggtgggacccatccgcaggcggtactcagac
+    Pmac            ctcccgtcacccaaggcccctccgtcatcaccaccaccagcatgcacacggtgggacccatccgcaggcggtactcagac
+    Pcra123188      ctcccgtcacccaaggcccctccgtcatcaccaccaccagcatgcacacggtgggacccatccgcaggcggtactcagac
+    Scoe            ctcccgtcacccaaggcccctccgtcatcaccaccaccagcatgcacacggtgggacccatccgcaggcggtactcagac
+    Ttru            ctcccgtcacccaaggcccctccgtcatcaccaccaccagcatgcacacggtgggacccatccgcaggcggtactcagac
+    Hippo           ctcccgtcacccaaggcccctccgtcatcaccaccaccagcatgcatacggtgggacccatccgcaggcggtactcagac
+
+    DdelSJR         aaatacaacgtgcccatctcttcagnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Gmac39091       aaatacaacgtgcccatctcttcagnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Ggri            aaatacaacgtgcccatctcttcagnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Oorc            aaatacaacgtgcccatctcttcagcagatattgcgcagaaccaagaattttataagaacgcagaagttagaccaccatt
+    Pmac            aaatacaacgtgcccatctcttcagcagatattgcgcagaaccaagaattttataagaacgcagaagttagaccaccatt
+    Pcra123188      aaatacaacgtgcccatctcttcagnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Scoe            aaatacaacgtgcccatctcttcagnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Ttru            aaatacaacgtgcccatctcttcagcagatattgcgcagaaccaagaattttataagaacgcagaagttagaccaccatt
+    Hippo           aaatacaacgtgcccatctcttcagnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+    DdelSJR         nnnnnnnnnnnnnnnnnnnnnnnnngccattctcgaatctccagagaagcagctaacactaaatgaaatctataactggt
+    Gmac39091       nnnnnnnnnnnnnnnnnnnnnnnnngccattctcgaatctccagagaaacagctaacactaaatgaaatctataactggt
+    Ggri            nnnnnnnnnnnnnnnnnnnnnnnnngccattctcgaatctccagagaagcagctaacactaaatgaaatctataactggt
+    Oorc            tacatatgcatctttaattaggcaggccattctcgaatctccagagaagcagctaacactaaatgaaatctataactggt
+    Pmac            tacatatgcatctttaattaggcaggccattctcgaatccccagaaaagcagctaacactaaacgaaatctataactggt
+    Pcra123188      nnnnnnnnnnnnnnnnnnnnnnnnngccattctcgaatctccagagaagcagctaacactaaatgaaatctataactggt
+    Scoe            nnnnnnnnnnnnnnnnnnnnnnnnngccattctcgaatctccagagaagcagctaacactaaatgaaatctataactggt
+    Ttru            tacatatgcatctttaattaggcaggccattctcgaatctccagagaagcagctaacactaaatgaaatctataactggt
+    Hippo           nnnnnnnnnnnnnnnnnnnnnnnnngccattctcgaatctccagagaagcagctaacactaaatgaaatctataactggt
+
+    DdelSJR         tcacacgaatgtttgcttacttccggcgtaacgctgccacatggaagaatgcagtgcgtcataatcttagtcttcacaag
+    Gmac39091       tcacacgaatgtttgcttacttccggcgtaacgctgccacatggaagaatgcagtgcgtcataatcttagtcttcacaag
+    Ggri            tcacacgaatgtttgcttacttccggcgtaacgctgccacatggaagaatgcagtgcgtcataatcttagtcttcacaag
+    Oorc            tcacacgaatgtttgcttacttccggcgtaacgctgccacatggaagaatgcagtgcgtcataatcttagtcttcacaag
+    Pmac            tcacacgaatgtttgcttacttccggcgtaatgctgccacatggaagaatgcagtgcgtcataatcttagtcttcacaag
+    Pcra123188      tcacacgaatgtttgcttacttccggcgtaacgctgccacatggaagaatgcagtgcgtcataatcttagtcttcacaag
+    Scoe            tcacacgaatgtttgcttacttccggcgtaacgctgccacatggaagaatgcagtgcgtcataatcttagtcttcacaag
+    Ttru            tcacacgaatgtttgcttacttccggcgtaacgctgccacatggaagaatgcagtgcgtcataatcttagtcttcacaag
+    Hippo           tcacacgaatgtttgcttacttccgacgcaatgctgccacgtggaagaatgcagtgcgtcataatcttagtcttcacaag
+
+    DdelSJR         tgttttgtgcgagtagaaaacgttaaaggggcagtatggacagtggatgaagtagagttccaaaaacgaaggccacaaaa
+    Gmac39091       tgttttgtgcgagtagaaaacgttaaaggggcagtatggacagtggatgaagtagagttccaaaaacgaaggccacaaaa
+    Ggri            tgttttgtgcgagtagaaaacgttaaaggggcagtatggacagtggatgaagtagagttccaaaaacgaaggccacaaaa
+    Oorc            tgttttgtgcgagtagaaaacgttaaaggggcagtatggacagtggatgaagtagagttccaaaaacgaaggccacaaaa
+    Pmac            tgttttgtgcgagtagaaaacgttaaaggggcagtatggacagtggatgaagtagagttccaaaaacgaaggccacaaaa
+    Pcra123188      tgttttgtgcgagtagaaaacgttaaaggggcagtatggacagtggatgaagtagagttccaaaaacgaaggccacaaaa
+    Scoe            tgttttgtgcgagtagaaaacgttaaaggggcagtatggacagtggatgaagtagagttccaaaaacgaaggccacaaaa
+    Ttru            tgttttgtgcgagtagaaaacgttaaaggggcagtatggacagtggatgaagtagagttccaaaaacgaaggccacaaaa
+    Hippo           tgttttgtgcgagtagaaaacgttaaaggggcagtatggacagtggatgaagtagaattccaaaaacgaaggccacaaaa
+
+    DdelSJR         gatcagtggtaacccttcccttattaaaaacatgcagaccagccacgcctactgtacacctctcaatgcagctttacagg
+    Gmac39091       gatcagtggtaacccttcccttattaaaaacatgcagaccagccacgcctactgtacacctctcaatgcagctttacagg
+    Ggri            gatcagtggtaacccttcccttattaaaaacatgcagaccagccacgcctactgtacacctctcaatgcagctttacagg
+    Oorc            gatcagtggtaacccttcccttattaaaaacatgcagaccagccacgcctactgtacacctctcaatgcagctttacagg
+    Pmac            gatcagtggtaacccttcccttattaaaaacatgcagaccagccacgcctactgtacacctctcaatgcagctttacagg
+    Pcra123188      gatcagtggtaacccttcccttattaaaaacatgcagaccagccacgcctactgtacacctctcaatgcagctttacagg
+    Scoe            gatcagtggtaacccttcccttattaaaaacatgcagaccagccacgcctactgtacacctctcaatgcagctttacagg
+    Ttru            gatcagtggtaacccttcccttattaaaaacatgcagaccagccacgcctactgtacacctctcaatgcagctttacagg
+    Hippo           gatcagtggtaacccttcccttattaaaaacatgcagaccagccacgcctactgtacacctctcaatgcagctttacagg
+
+    DdelSJR         cttccatggctgagaacagtatacctctatacactaccgcttccatgggaaaccccactctgggcaacctagccagcgcc
+    Gmac39091       cttcgatggctgagaacagtatacctctatacactaccgcttccatgggaaaccccactctgggcaacctagccagcgcc
+    Ggri            cttcgatggctgagaacagtatacctctatacactaccgcttccatgggaaaccccactctgggcaacctagccagcgcc
+    Oorc            cttcgatggctgagaacagtatacctctatacactaccgcttccatgggaaaccccactctgggcaacctagccagcgcc
+    Pmac            cttcgatggctgagaacagtatacctctatacactaccgcttccatgggaaaccccactctgggcaacctagccagtgcc
+    Pcra123188      cttcgatggctgagaacagtatacctctatacactaccgcttccatgggaaaccccactctgggcaacctagccagcgcc
+    Scoe            cttccatggctgagaacagtatacctctatacactaccgcttccatgggaaaccccactctgggcaacctagccagcgcc
+    Ttru            cttccatggctgagaacagtatacctctatacactaccgcttccatgggaaaccccactctgggcaacctagccagcgcc
+    Hippo           cttcgatggctgagaacagtatacctctatacactaccgcttccatgggaaaccccactctgggcaacctagccagcgcc
+
+    DdelSJR         atacgggaagagctgaacggggcgatggagcacaccaacagcaacgagagcgacagcagcccgggcagatcccctatgca
+    Gmac39091       atacgggaagagctgaacggggcgatggagcacaccaacagcaacgagagcgacagcagcccgggcagatcccctatgca
+    Ggri            atacgggaagagctgaacggggcgatggagcacaccaacagcaacgagagcgacagcagcccgggcagatcccctatgca
+    Oorc            atacgggaagagctgaacggggcgatggagcacaccaacagcaacgagagcgacagcagcccgggcagatcccctatgca
+    Pmac            atacgggaagagctgaacggggcgatggagcacaccaacagcaacgagagcgacagcagcccgggcagatcccctatgca
+    Pcra123188      atacgggaagagctgaacggggcgatggagcacaccaacagcaacgagagcgacagcagcccgggcagatcccctatgca
+    Scoe            atacgggaagagctgaacggggcgatggagcacaccaacagcaacgagagcgacagcagcccgggcagatcccctatgca
+    Ttru            atacgggaagagctgaacggggcgatggagcacaccaacagcaacgagagcgacagcagcccgggcagatcccctatgca
+    Hippo           atacgggaagagctgaacggggcgatggagcataccaacagcaacgagagcgacagcagtcccggcagatcccctatgca
+
+    DdelSJR         agccgtgcatcctgtacatgtcaaagaagagcccctggatccagaggaagctgaagggccgctatccctagtgacaacag
+    Gmac39091       agccgtgcatcctgtacatgtcaaagaagagcccctggatccagaggaagctgaagggccgctatccctagtgacaacag
+    Ggri            agccgtgcatcctgtacatgtcaaagaagagcccctggatccagaggaagctgaagggccgctatccctagtgacaacag
+    Oorc            agccgtgcatcctgtacatgtcaaagaagagcccctggatccagaggaagctgaagggccgctatccctagtgacaacag
+    Pmac            agccgtgcatcctgtacatgtcaaagaagagcccctggatcccgaggaagctgaagggccgctatccctagtgacaacag
+    Pcra123188      agccgtgcatcctgtacatgtcaaagaagagcccctggatccagaggaagctgaagggccgctatccctagtgacaacag
+    Scoe            agccgtgcatcctgtacatgtcaaagaagagcccctggatccagaggaagctgaagggccgctatccctagtgacaacag
+    Ttru            agccgtgcatcctgtacatgtcaaagaagagcccctggatccagaggaagctgaagggccgctatccctagtgacaacag
+    Hippo           agccgtgcatcccgtacacgtcaaagaagagcccctggatccagaggaagctgaagggccactatccttagtgacaacag
+
+    DdelSJR         ccaaccacagtccagattttgaccacgacagagattacgaagacgaaccagtacatgaggacgtggagtgaatgacagcc
+    Gmac39091       ccaaccacagtccagattttgaccacgacagagattacgaagacgaaccagtacatgaggacgtggagtgaatgacagcc
+    Ggri            ccaaccacagtccagattttgaccacgacagagattacgaagacgaaccagtacatgaggacgtggagtgaatgacagcc
+    Oorc            ccaaccacagtccagattttgaccacgacagagattacgaagacgaaccagtacatgaggacgtggagtgaatgacagcc
+    Pmac            ccaaccacagtccagattttgaccacgacagagattacgaagacgaaccagtaaatgaggacatggagtgannnnnnnnn
+    Pcra123188      ccaaccacagtccagattttgaccacgacagagattacgaagacgaaccagtacatgaggacgtggagtgaatgacagcc
+    Scoe            ccaaccacagtccagattttgaccacgacagagattacgaagacgaaccagtacatgaggacgtggagtgaatgacagcc
+    Ttru            ccaaccacagtccagattttgaccacgacagagattacgaagacgaaccagtacatgaggacgtggagtgagc-------
+    Hippo           ccaaccacagtccagattttgaccacgacagagattacgaagacgaaccagtacatgaggacatggagtgaatgacagcc
+
+    DdelSJR         tccgtgctcctccacccccgctggatcgagcccaccgtcatgtttctctacgacaacggcggcggcctggtggccgacga
+    Gmac39091       tccgtgctcctccacccccgctggatcgagcccaccgtcatgtttctctacgacaacggcggcggcctggtggccgacga
+    Ggri            tccgtgctcctccacccccgctggatcgagcccaccgtcatgtttctctacgacaacggcggcggcctggtggccgacga
+    Oorc            tccgtgctcctccacccccgctggatcgagcccaccgtcatgtttctctacgacaacggcggcggcctggtggccgacga
+    Pmac            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Pcra123188      tccgtgctcctccacccccgctggatcgagcccaccgtcatgtttctctacgacaacggcggcggcctggtggccgacga
+    Scoe            tccgtgctcctccacccccgctggatcgagcccaccgtcatgtttctctacgacaacggcggcggcctggtggccgacga
+    Ttru            --------------------------------------------------------------------------------
+    Hippo           tccgtgctcctccacccccgctggatcgagcccaccgtcatgtttctctacgacaacggcggcggcctggtggccgacga
+
+    DdelSJR         gctcaacaagaacatggaaggggcggcggcggcggcggcggcggcagcggcggctgcggc--------------------
+    Gmac39091       gctcaacaagaacatggaaggggcggcggcggcggcggcggcggcagcg---gcggctgcggctggggccgggggcgggg
+    Ggri            gctcaacaagaacatggaaggggcggcggcggcggcggcggcgg------------------------------------
+    Oorc            gctcaacaagaacatggaaggggcggcggcggcggcggcggcggcggcagcggcggctgcggctggggccgggggcgggg
+    Pmac            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn-nnnnnnnnn
+    Pcra123188      gctcaacaagaacatggaaggggcggcggcggcggcggcggcggcggca---gcggcggctgcggct-------------
+    Scoe            gctcaacaagaacatggaaggggcggcggcggcggcggcggcggcagcg---gcggctgcggctggggccgggggcgggg
+    Ttru            --------------------------------------------------------------------------------
+    Hippo           gctcaacaagaacatggaaggggcggcggcggcggcggcg----------------------------------------
+
+    DdelSJR         ------------------------------------------------------tggggccggcgggcgccgaggccgcg
+    Gmac39091       gcttccc---------------------------------------------ccacccggcggcgggcgccgaggccgcc
+    Ggri            -------------------------------------------------------------cgcgggcgccgaggccgcc
+    Oorc            gcttcccccacccggcggctgcggccgcggggggcaacttctcggtggcggcggcggctgcggcgggcgccgaggccgcc
+    Pmac            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Pcra123188      -----------------------------------------------------ggggccggggcgggcgccgaggccgcc
+    Scoe            gcttc-----------------------------------------------------------------------cccc
+    Ttru            ----------------------------------------------------------------gggcgccgaggccgcc
+    Hippo           --------------------------------------------------------gcggcggcgggcgccgaggccgcc
+
+    DdelSJR         aagcagtgcagtccctgctcagcggcggcgcagagctcgtcggggcccgcagcgctgccctacggctatttcggcagcgg
+    Gmac39091       aagcagtgcagtccctgctcagcggcggcgcagagctcgtcggggcccgcagcgctgccctacggctatttcggcagcgg
+    Ggri            aagcagtgcagtccctgctcagcggcggcgcagagctcgtcggggcccgcagcgctgccctacggctatttcggcagcgg
+    Oorc            aagcagtgcagtccctgctcggcggcggcgcagagctcgtcggggcccgcagcgctgccctacggctatttcggcagcgg
+    Pmac            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Pcra123188      aagcagtgcagtccctgctcagcggcggcgcagagctcgtcggggcccgcagcgctgccctacggctatttcggcagcgg
+    Scoe            aagcagtgcagtccctgctcagcggcggcgcagagctcgtcggggcccgcagcgctgccctacggctatttcggcagcgg
+    Ttru            aagcagtgcagtccctgctcagcggcggcgcagagctcgtcggggcccgcagcgctgccctacggctatttcggcagcgg
+    Hippo           aagcagtgcagtccctgctcggcggcggcgcagagctcgtcggggcccgcagcgctgccctacggctatttcggcagcgg
+
+    DdelSJR         ctactacccttgcgcccgcatgggcccgcaccccaacgccatcaagtcgtgcgcgcagccagcctcggccgccgccgctg
+    Gmac39091       ctactacccttgcgcccgcatgggcccgcaccccaacgccatcaagtcgtgcgcgcagccagcctcggccgccgccgctg
+    Ggri            ctactacccttgcgcccgcatgggcccgcaccccaacgccatcaagtcgtgcgcgcagccagcctcggccgccgccgctg
+    Oorc            ctactacccttgcgcccgcatgggcccgcaccccaacgccatcaagtcgtgcgcgcagccagcctcggccgccgccgctg
+    Pmac            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Pcra123188      ctactacccttgcgcccgcatgggcccgcaccccaacgccatcaagtcgtgcgcgcagccagcctcggccgccgccgctg
+    Scoe            ctactacccttgcgcccgcatgggcccgcaccccaacgccatcaagtcgtgcgcgcagccagcctcggccgccgccgctg
+    Ttru            ctactacccttgcgcccgcatgggcccgcaccccaacgccatcaagtcgtgcgcgcagccagcctcggccgccgccgctg
+    Hippo           ctactacccttgcgcccgcatgggcccgcaccccaacgccatcaagtcgtgcgcgcagcccgcctcggccgccgctgctg
+
+    DdelSJR         ccttcgcggacaagtacatggacaccgctggccccgcggccgaggagttcagctcacgcgctaaggagttcgccttctac
+    Gmac39091       ccttcgcggacaagtacatggacaccgctggccccgcggccgaggagttcagctcacgcgctaaggagttcgccttctac
+    Ggri            ccttcgcggacaagtacatggacaccgctggccccgcggccgaggagttcagctcacgcgctaaggagttcgccttctac
+    Oorc            ccttcgcggacaagtacatggacaccgctggccccgcggccgaggagttcagctcacgcgctaaggagttcgccttctac
+    Pmac            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Pcra123188      ccttcacggacaagtacatggacaccgctggccccgcggccgaggagttcagctcacgcgctaaggagttcgccttctac
+    Scoe            ccttcgcggacaagtacatggacaccgctggccccgcggccgaggagttcagctcacgcgctaaggagttcgccttctac
+    Ttru            ccttcgcggacaagtacatggacaccgctggccccgcggccgaggagttcagctcacgcgctaaggagttcgccttctac
+    Hippo           ctttcgcggacaagtacatggacaccgccggccccgcggccgaggagttcagctcccgcgctaaggagttcgcct-----
+
+    DdelSJR         caccagggctatgcgcccgggccttaccaccaccatcagcccgtgcctggctacctggatatgccggtggtgcccggcct
+    Gmac39091       caccagggctatgcgcccgggccttaccaccaccatcagcccgtgcctggctacctggatatgccggtggtgcccggcct
+    Ggri            caccagggctatgcgcccgggccttaccaccaccatcagcccgtgcctggctacctggatatgccggtggtgcccggtct
+    Oorc            caccagggctatgcgcccgggccttaccaccaccatcagcccgtgcctggctacctggatatgccggtggtgcccggcct
+    Pmac            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Pcra123188      caccagggctatgcgcccgggccttaccaccaccatcagcccgtgcctggctacctggatatgccggtggtgcccggcct
+    Scoe            caccagggctatgcgcccgggccttaccaccaccatcagcccgtgcctggctacctggatatgccggtggtgcccggcct
+    Ttru            caccagggctatgcgcccgggccttaccaccaccatcagcccgtgcctggctacctggatatgccggtggtgcccggcct
+    Hippo           --------------------------------------------------------------------------------
+
+    DdelSJR         cgggggccctggagagtcgcgccacgagcccctgggtcttcccatggaaagctaccagccctgggcgctgcccaacggct
+    Gmac39091       cgggggccctggagagtcgcgccacgagcccctgggtcttcccatggaaagctaccagccctgggcgctgcccaacggct
+    Ggri            cgggggccctggagagtcgcgccacgagcccctgggtcttcccatggaaagctaccagccctgggcgctgcccaacggct
+    Oorc            cgggggccctggagagtcgcgccacgagcccctgggtcttcccatggaaagctaccagccctgggcgctgcccaacggct
+    Pmac            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Pcra123188      cgggggccctggagagtcgcgccacgagcccctgggtcttcccatggaaagctaccagccctgggcgctgcccaacggct
+    Scoe            cgggggccctggagagtcgcgccacgagcccctgggtcttcccatggaaagctaccagccctgggcgctgcccaacggct
+    Ttru            cgggggccctggagagtcgcgccacgagcccctgggtcttcccatggaaagctaccagccctgggcgctgcccaacggct
+    Hippo           --------------------------------------------------------------------------------
+
+    DdelSJR         ggaacggccaaatgtactgccccaaagagcaggcacagccttcccacctctggaagtccactctgcccgatgtggtctct
+    Gmac39091       ggaacggccaaatgtactgccccaaagagcaggcacagccttcccacctctggaagtccactctgcccgatgtggtctct
+    Ggri            ggaacggccaaatgtactgccccaaagagcaggcacagccttcccacctctggaagtccactctgcccgatgtggtctct
+    Oorc            ggaacggccaaatgtactgccccaaagagcaggcacagccttcccacctctggaagtccactctgcccgatgtggtctct
+    Pmac            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Pcra123188      ggaacggccaaatgtactgccccaaagagcaggcacagccttcccacctctggaagtccactctgcccgatgtggtctct
+    Scoe            ggaacggccaaatgtactgccccaaagagcaggcacagccttcccacctctggaagtccactctgcccgatgtggtctct
+    Ttru            ggaacggccaaatgtactgccccaaagagcaggcacagccttcccacctctggaagtccactctgcccgatgtggtctct
+    Hippo           -------------------------------------------------------------------------------t
+
+    DdelSJR         catccctcagacgccagctcctacaggagggggagaaagaagcgcgtcccttacaccaaggtgcaattaaaagaactcga
+    Gmac39091       catccctcagacgccagctcctacaggagggggagaaagaagcgcgtcccttacaccaaggtgcaattaaaagaactcga
+    Ggri            catccctcagacgccagctcctacaggagggggagaaagaagcgcgtcccttacaccaaggtgcaattaaaagaactcga
+    Oorc            catccctcagacgccagctcctacaggagggggagaaagaagcgcgtcccttacaccaaggtgcaattaaaagaactcga
+    Pmac            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Pcra123188      catccctcagacgccagctcctacaggagggggagaaagaagcgcgtcccttacaccaaggtgcaattaaaagaactcga
+    Scoe            catccctcagacgccagctcctacaggagggggagaaagaagcgcgtcccttacaccaaggtgcaattaaaagaactcga
+    Ttru            catccctcagacgccagctcctacaggagggggagaaagaagcgcgtcccttacaccaaggtgcaattaaaagaactcga
+    Hippo           catccctcagatgccagctcctacaggcgggggagaaagaagcgcgtcccttacaccaaggttcaattaaaagaactcga
+
+    DdelSJR         acggg-aatacgctacaaacaaatt-cgtt--accaaggacaaacgtaggcggatatcagccaccacgaatctctccgag
+    Gmac39091       acggg-aatacgctacaaacaaatt-catt--accaaggacaaacgtaggcggatatcagccaccacgaatctctccgag
+    Ggri            acggg-aatacgctacaaacaaatt-catt--accaaggacaaacgtaggcggatatcagccaccacgaatctctccgag
+    Oorc            acggg-aatacgctacaaacaaatt-catt--accaaggacaaacggaggcggatatcagccaccacgaatctctctgag
+    Pmac            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Pcra123188      acggg-aatacgctacaaacaaatt-catt--accaaggacaaacgtaggcggatatcagccaccacgaatctctccgag
+    Scoe            acggg-aatacgctacaaacaaatt-cgtt--accaaggacaaacgtaggcggatatcagccaccacgaatctctccgag
+    Ttru            acggg-aatacgctacaaacaaatt-cgtt--accaaggacaaacgtaggcggatatcagccaccacgaatctctccgag
+    Hippo           acggg-aatacgctacaaacaaatt-catt--accaaggacaaacggaggcggatatcagccaccacgaatctctcggag
+
+    DdelSJR         cggcaggttacaatctggttccagaacaggagggtcaaagagaaaaaagttatcaacaaactgaagaccactagttaaat
+    Gmac39091       cggcaggttacaatctggttccagaacaggagggtcaaagagaaaaaagttatcaacaaactgaagaccactagttaaat
+    Ggri            cggcaggttacaatctggttccagaacaggagggtcaaagagaaaaaagttatcaacaaactgaagaccactagttaaat
+    Oorc            cggcaggttacaatctggttccagaacaggagggtcaaagagaaaaaagttatcaacaaactgaagaccactagttaaat
+    Pmac            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnat
+    Pcra123188      cggcaggttacaatctggttccagaacaggagggtcaaagagaaaaaagttatcaacaaactgaagaccactagttaaat
+    Scoe            cggcaggttacaatctggttccagaacaggagggtcaaagagaaaaaagttatcaacaaactgaagaccactagttaaat
+    Ttru            cggcaggttacaatctggttccagaacaggagggtcaaagagaaaaaagttatcaacaaactgaagaccactagttaaat
+    Hippo           cggcaggttacaatctggttccagaacaggagggtcaaagagaaaaaagttatcaacaaactgaagaccactagttaaat
+
+    DdelSJR         ggccaccaccggggccctaggcaactactacgtggactcattcctgctgggcaccgatgccgcggatgagctgggcgcgg
+    Gmac39091       ggccaccaccggggccctaggcaactactacgtggactcattcctgctgggcaccgatgccgcggatgagctgggcgcgg
+    Ggri            ggccaccaccggggccctaggcaactactacgtggactcattcctgctgggcaccgatgccgcggatgagctgggcgcgg
+    Oorc            ggccaccaccggggccctaggcaactactacgtggactcattcctgctgggcaccgatgccgcggatgagctgggcgcgg
+    Pmac            ggccaccaccggggccctaggcaactactacgtggactcattcctgctgggcgccgatgccgcggatgagctgggcgcgg
+    Pcra123188      ggccaccaccggggccctaggcaactactacgtggactcattcctgctgggcaccgatgccgcggatgagctgggcgcgg
+    Scoe            ggccaccaccggggccctaggcaactactacgtggactcattcctgctgggcaccgatgccgcggatgagctgggcgcgg
+    Ttru            ggccaccaccggggccctaggcaactactacgtggactcattcctgctgggcaccgatgccgcggatgagctgggcgcgg
+    Hippo           ggccaccaccggggccctaggcaactactacgtggactcattcctgctgggcgccgatgcggcggatgagctgggcgccg
+
+    DdelSJR         gccgctacgcgccgggagccctgggccagcccccgcggcaggccgcggcgctggcggagcaccccgatttcagcccgtgc
+    Gmac39091       gccgctacgcgccgggagccctgggccagcccccgcggcaggccgcggcgctggcggagcaccccgatttcagcccgtgc
+    Ggri            gccgctacgcgccgggagccctgggccagcccccgcggcaggccgcggcgctggcggagcaccccgatttcagcccgtgc
+    Oorc            gccgctacgcgccgggagccctgggccagcccccgcggcaggccgcggcgctggcggagcaccccgatttcagcccgtgc
+    Pmac            gccgctacgcgccgggagccctgggccagcccccccggcaggccgcggcgctggcggagcaccccgatttcagtccgtgc
+    Pcra123188      gccgctacgcgccgggagccctgggccagcccccgcggcaggccgcggcgctggcggagcaccccgatttcagcccgtgc
+    Scoe            gccgctacgcgccgggagccctgggccagcccccgcggcaggccgcggcgctggcggagcaccccgatttcagcccgtgc
+    Ttru            gccgctacgcgccgggagccctgggccagcccccgcggcaggccgcggcgctggcggagcaccccgatttcagcccgtgc
+    Hippo           gccgctacgcgccgggagctctgggccagacccccaggcaggccgcggcgctggcggagcaccccgacttcagcccgtgc
+
+    DdelSJR         agcttccagtccaaggcggcggtgtttggcgcctcgtggaacccggtgcacgcggcgggcgccaatgcggtgcccgcggc
+    Gmac39091       agcttccagtccaaggcggcggtgtttggcgcctcgtggaacccggtgcacgcggcgggcgccaatgcggtgcccgcggc
+    Ggri            agcttccagtccaaggcggcggtgtttggcgcctcgtggaacccggtgcacgcggcgggcgccaatgcggtgcccgcggc
+    Oorc            agcttccagtccaaggcggcggtgtttggcgcctcgtggaacccggtgcacgcggcgggcgccaatgcggtgcccgcggc
+    Pmac            agcttccagtccaaggcggcggtgtttggcgcctcgtggaacccggtgcacgcggcgggcgccaatgcggtgcccgcggc
+    Pcra123188      agcttccagtccaaggcggcggtgtttggcgcctcgtggaacccggtgcacgcggcgggcgccaatgcggtgcccgcggc
+    Scoe            agcttccagtccaaggcggcggtgtttggcgcctcgtggaacccggtgcacgcggcgggcgccaatgcggtgcccgcggc
+    Ttru            agcttccagtccaaggcggcggtgtttggcgcctcgtggaacccggtgcacgcggcgggcgccaatgcggtgcccgcggc
+    Hippo           agcttccagtccaaggcagcggtgtttggcgcctcgtggaacccggtgcacgcggcgggcgccagcgcggtgcccgcgac
+
+    DdelSJR         agtgtatcaccaccatcaccaccacccctacgtgcacccccaggcgcccgtggcggcggcggcgccggacggcaggtaca
+    Gmac39091       agtgtatcaccaccatcaccaccacccctacgtgcacccccaggcgcccgtggcggcggcggcgccggacggcaggtaca
+    Ggri            agtgtatcaccaccatcaccaccacccctacgtgcacccccaggcgcccgtggcggcggcggcgccggacggcaggtaca
+    Oorc            agtgtatcaccaccatcaccaccacccctacgtgcacccccaggcgcccgtggcggcggcggcgccggacggcaggtaca
+    Pmac            agtgtatcaccaccatcaccaccacccctacgtgcacccccaggcgcccgtggcggcggcggcgccggacggcaggtaca
+    Pcra123188      agtgtatcaccaccatcaccaccacccctacgtgcacccccaggcgcccgtggcggcggcggcgccggacggcaggtaca
+    Scoe            agtgtatcaccaccatcaccaccacccctacgtgcacccccaggcgcccgtggcggcggcggcgccggacggcaggtaca
+    Ttru            agtgtatcaccaccatcaccaccacccctacgtgcacccccaggcgcccgtggcggcggcggcgccggacggcaggtaca
+    Hippo           cgtgtatcatcaccatcaccaccacccctacgtgcacccccaggcgcccgtggcggcggcggcgccggacggcaggtaca
+
+    DdelSJR         tgcgctcctggctggagcccacgcccggcgcgctctccttcgcgggcttgccctccagccggccttatggcattaaacct
+    Gmac39091       tgcgctcctggctggagcccacgcccggcgcgctctccttcgcgggcttgccctccagccggccttatggcattaaacct
+    Ggri            tgcgctcctggctggagcccacgcccggcgcgctctccttcgcgggcttgccctccagccggccttatggcattaaacct
+    Oorc            tgcgctcctggctggagcccacgcccggcgcgctctccttcgcgggcttgccctccagccggccttatggcattaaacct
+    Pmac            tgcgctcctggctggagcccacgcccggcgcgctctccttcgcgggcttgccctccagccggccttatggcattaaacct
+    Pcra123188      tgcgctcctggctggagcccacgcccggcgcgctctccttcgcgggcttgccctccagccggccttatggcattaaacct
+    Scoe            tgcgctcctggctggagcccacgcccggcgcgctctccttcgcgggcttgccctccagccggccttatggcattaaacct
+    Ttru            tgcgctcctggctggagcccacgcccggcgcgctctccttcgcgggcttgccctccagccggccttatggcattaaacct
+    Hippo           tgcgctcctggctggagcccacgccgggcgcgctctccttcgcgggcttgcccg--------------------------
+
+    DdelSJR         gaaccgctgtcggccagaaggggtgactgtcccacgcttgacactcacactttgtccctgactgactatgcttgtggttc
+    Gmac39091       gaaccgctgtcggccagaaggggtgactgtcccacgcttgacactcacactttgtccctgactgactatgcttgtggttc
+    Ggri            gaaccgctgtcggccagaaggggtgactgtcccacgcttgacactcacactttgtccctgactgactatgcttgtggttc
+    Oorc            gaaccgctgtcggccagaaggggtgactgtcccacgcttgacactcacactttgtccctgactgactatgcttgtggttc
+    Pmac            gaaccgctgtcggccagaaggggtgactgtcccacgcttgacactcacactttgtccctgactgactatgcttgtggttc
+    Pcra123188      gaaccgctgtcggccagaaggggtgactgtcccacgcttgacactcacactttgtccctgactgactatgcttgtggttc
+    Scoe            gaaccgctgtcggccagaaggggtgactgtcccacgcttgacactcacactttgtccctgactgactatgcttgtggttc
+    Ttru            gaaccgctgtcggccagaaggggtgactgtcccacgcttgacactcacactttgtccctgactgactatgcttgtggttc
+    Hippo           --------------------------------------------------------------------------------
+
+    DdelSJR         tcctccagttgatagagaaaaacagcccagcgaaggcgccttctctgaaaacaatcctgagaatgagagcggcggagaca
+    Gmac39091       tcctccagttgatagagaaaaacagcccagcgaaggcgccttctctgaaaacaatcctgagaatgagagcggcggagaca
+    Ggri            tcctccagttgatagagaaaaacagcccagcgaaggcgccttctctgaaaacaatcctgagaatgagagcggcggagaca
+    Oorc            tcctccagttgatagagaaaaacagcccagcgaaggcgccttctctgaaaacaatcctgagaatgagagcggcggagaca
+    Pmac            tcctccagttgatagagaaaaacagcccagcgaaggcgccttctccgaaaacaatcctgagaatgagagcggcggagaca
+    Pcra123188      tcctccagttgatagagaaaaacagcccagcgaaggcgccttctctgaaaacaatcctgagaatgagagcggcggagaca
+    Scoe            tcctccagttgatagagaaaaacagcccagcgaaggcgccttctctgaaaacaatcctgagaatgagagcggcggagaca
+    Ttru            tcctccagttgatagagaaaaacagcccagcgaaggcgccttctctgaaaacaatcctgagaatgagagcggcggagaca
+    Hippo           --------------------------------------------------------------------------------
+
+    DdelSJR         agccccccatcgatcccagtaacccggctgccaactggctccatgctcgctccacgcggaagaagcgctgcccctataca
+    Gmac39091       agccccccatcgatcccagtaacccggctgccaactggctccatgctcgctccacgcggaagaagcgctgcccctataca
+    Ggri            agccccccatcgatcccagtaacccggctgccaactggctccatgctcgctccacgcggaagaagcgctgcccctataca
+    Oorc            agccccccatcgatcccagtaacccggctgccaactggctccatgctcgctccacgcggaagaagcgctgcccctataca
+    Pmac            agccccccatcgatcccagtaacccggctgccaactggctccacgctcgctccacgcggaagaagcgctgcccctataca
+    Pcra123188      agccccccatcgatcccagtaacccggctgccaactggctccatgctcgctccacgcggaagaagcgctgcccctataca
+    Scoe            agccccccatcgatcccagtaacccggctgccaactggctccatgctcgctccacgcggaagaagcgctgcccctataca
+    Ttru            agccccccatcgatcccagtaacccggctgccaactggctccatgctcgctccacgcggaagaagcgctgcccctataca
+    Hippo           -------------------taacccggctgccaactggctccacgctcgctccacgcggaagaagcgctgtccttatacg
+
+    DdelSJR         aaacaccaaacgctggaactggagaaagaatttctgttcaacatgtacctcaccagggaccgcaggtacgaggtggcccg
+    Gmac39091       aaacaccaaacgctggaactggagaaagaatttctgttcaacatgtacctcaccagggaccgcaggtacgaggtggcccg
+    Ggri            aaacaccaaacgctggaactggagaaagaatttctgttcaacatgtacctcaccagggaccgcaggtacgaggtggcccg
+    Oorc            aaacaccaaacgctggaactggagaaagaatttctgttcaacatgtacctcaccagggaccgcaggtacgaggtggcccg
+    Pmac            aaacaccaaacgctggaactggagaaagaatttctgttcaacatgtacctcaccagggaccgcaggtacgaggtggcccg
+    Pcra123188      aaacaccaaacgctggaactggagaaagaatttctgttcaacatgtacctcaccagggaccgcaggtacgaggtggcccg
+    Scoe            aaacaccaaacgctggaactggagaaagaatttctgttcaacatgtacctcaccagggaccgcaggtacgaggtggcccg
+    Ttru            aaacaccaaacgctggaactggagaaagaatttctgttcaacatgtacctcaccagggaccgcaggtacgaggtggcccg
+    Hippo           aagcaccaaacactggaactggagaaagaatttctgttcaacatgtacctcaccagggaccgcaggtatgaggtggctag
+
+    DdelSJR         actgctcaacctcaccgagaggcaggtcaagatctggttccagaaccgc-------------------------------
+    Gmac39091       actgctcaacctcaccgagaggcaggtcaagatctggttccagaaccgcaggatgaaaatgaagaaaatcaacaaggacc
+    Ggri            actgctcaacctcaccgagaggcaggtcaagatctggttccagaaccgcaggatgaaaatgaagaaaatcaacaaggacc
+    Oorc            actgctcaacctcaccgagaggcaggtcaagatctggttccagaaccgcaggatgaaaatgaagaaaatcaacaaggacc
+    Pmac            actgctcaacctcactgagaggcaggtcaagatctggttccagaaccgcaggatgaaaatgaagaaaatcaacaaggacc
+    Pcra123188      actgctcaacctcaccgagaggcaggtcaagatctggttccagaaccgcaggatgaaaatgaagaaaatcaacaaggacc
+    Scoe            actgctcaacctcaccgagaggcaggtcaagatctggttccagaaccgcaggatgaaaatgaagaaaatcaacaaggacc
+    Ttru            actgctcaacctcaccgagaggcaggtcaagatctggttccagaaccgcaggatgaaaatgaagaaaatcaacaaggacc
+    Hippo           actgctcaacctcaccgagaggcaggtcaagatctggttccagaatcgcaggatgaagatgaagaaaatcaacaaggacc
+
+    DdelSJR         ----------------aatgagttcattgtattatgcgaatgctttattttctaaatatccagccgcaagttcggttttc
+    Gmac39091       gagcaaaagacgagtgaatgagttcattgtattatgcgaatgctttattttctaaatatccagccgcaagttcggttttc
+    Ggri            gagcaaaagacgagtgaatgagttcattgtattatgcgaatgctttattttctaaatatccagccgcaagttcggttttc
+    Oorc            gagcaaaagacgagtgaatgagttcattgtattatgcgaatgctttattttctaaatatccagccgcaagttcggttttc
+    Pmac            gagcaaaagacgagtgaatgagttcattgtattatgcgaatgctttattttctaaatatccagccgcaagttcggttttc
+    Pcra123188      gagcaaaagacgagtgaatgagttcattgtattatgcgaatgctttattttctaaatatccagccgcaagttcggttttc
+    Scoe            gagcaaaagacgagtgaatgagttcattgtattatgcgaatgctttattttctaaatatccagccgcaagttcggttttc
+    Ttru            gagcaaaagacgagtgannnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Hippo           gagcgaaagatgagtgaatgagttcattgtattatgcgaatgctttattttctaaatatccagccgcaagttcggttttc
+
+    DdelSJR         gctaccggagccttccccgaacaaacttcttgtgcgtttgcttccaacccccagcgcccgggctatggagcgggttcggg
+    Gmac39091       gctaccggagccttccccgaacaaacttcttgtgcgtttgcttccaacccccagcgcccgggctatggagcgggttcggg
+    Ggri            gctaccggagccttccccgaacaaacttcttgtgcgtttgcttccaacccccagcgcccgggctatggagcgggttcggg
+    Oorc            gctaccggagccttccccgaacaaacttcttgtgcgtttgcttccaacccccagcgcccgggctatggagcgggttcggg
+    Pmac            gctaccggagccttccccgaacaaacttcttgtgcgtttgcttccaacccccagcgcccgggctatggagcgggttcggg
+    Pcra123188      gctaccggagccttccccgaacaaacttcttgtgcgtttgcttccaacccccagcgcccgggctatggagcgggttcggg
+    Scoe            gctaccggagccttccccgaacaaacttcttgtgcgtttgcttccaacccccagcgcccgggctatggagcgggttcggg
+    Ttru            nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn---n-nnnnnnnnnnnnn-nnnnnnnnn-
+    Hippo           gctaccggagccttccccgaacaaacttcttgtgcgtttgcttccaacccccagcgcccgggctatggagcgggttcggg
+
+    DdelSJR         cgcttccttcgccgcctcgatgcagggcttgtaccccggcggggggggcatggcgggccagagtgcagccggcgtctacg
+    Gmac39091       cgcttccttcgccgcctcgatgcagggcttgtaccccggcggggggggcatggcgggccagagtgcagccggcgtctacg
+    Ggri            cgcttccttcgccgcctcgatgcagggcttgtaccccggcggggggggcatggcgggccagagtgcagccggcgtctacg
+    Oorc            cgcttccttcgccgcctcgatgcagggcttgtaccccggcggggggggcatggcgggccagagtgcagccggcgtctacg
+    Pmac            cgcttccttcgccgcctcgatgcagggcttgtaccccggcggggggggcatggcgggccagagtgcagccggcgtctacg
+    Pcra123188      cgcttccttcgccgcctcgatgcagggcttgtaccccggcggggggggcatggcgggccagagtgcagccggcgtctacg
+    Scoe            cgcttccttcgccgcctcgatgcagggcttgtaccccggcggggggggcatggcgggccagagtgcagccggcgtctacg
+    Ttru            nnnnnnnnnnnnn-nnnnnnnnnn-nnnnnnnnnnnnnnn-nnnnn-nnnnnnnnnnn-nnnnnnnnnnn-nnnnnnnnn
+    Hippo           cgcttccttcgccgcctcgatgcagggcttgtaccccggcggggggggcatggcgggccagagtgcagccggcgtctacg
+
+    DdelSJR         cggccggctacgggctcgagccgagttccttcaacatgcactgcgcaccctttgagcagaacctctccggggtgtgtccc
+    Gmac39091       cggccggctacgggctcgagccgagttccttcaacatgcactgcgcaccctttgagcagaacctctccggggtgtgtccc
+    Ggri            cggccggctacgggctcgagccgagttccttcaacatgcactgcgcaccctttgagcagaacctctccggggtgtgtccc
+    Oorc            cggccggctacgggctcgagccgagttccttcaacatgcactgcgcaccctttgagcagaacctctccggggtgtgtccc
+    Pmac            cggccggctacgggctcgagccgagttccttcaacatgcactgcgcaccctttgagcagaacctctccggggtgtgtccc
+    Pcra123188      cggccggctacgggctcgagccgagttccttcaacatgcactgcgcaccctttgagcagaacctctccggggtgtgtccc
+    Scoe            cggccggctacgggctcgagccgagttccttcaacatgcactgcgcaccctttgagcagaacctctccggggtgtgtccc
+    Ttru            nnn-nnnnnnnnn-nnnnnnn-nnnnnnnnnnnnnnnnnnnnnn-nnnnnnnnnnnnn-nnnnnnnnn-nnnnnnnnnnn
+    Hippo           cggccggctacgggctcgagccgagttccttcaacatgcactgcgcgccctttgagcagaacctctccggggtgtgtccc
+
+    DdelSJR         ggcgactctgccaaggcggcgggcgccaaggagcagagggactcggacttggcggccgagagtaacttccggatctaccc
+    Gmac39091       ggcgactctgccaaggcggcgggcgccaaggagcagagggactcggacttggcggccgagagtaacttccggatctaccc
+    Ggri            ggcgactctgccaaggcggcgggcgccaaggagcagagggactcggacttggcggccgagagtaacttccggatctaccc
+    Oorc            ggcgactctgccaaggcggcgggcgccaaggagcagagggactcggacttggcggccgagagtaacttccggatctaccc
+    Pmac            ggcgactctgccaaggcggcgggcgccaaggagcagagggactcggacttggcggccgagagtaacttccggatctaccc
+    Pcra123188      ggcgactctgccaaggcggcgggcgccaaggagcagagggactcggacttggcggccgagagtaacttccggatctaccc
+    Scoe            ggcgactctgccaaggcggcgggcgccaaggagcagagggactcggacttggcggccgagagtaacttccggatctaccc
+    Ttru            n-nnnnnnnnnnnnnnn-nnnnn-nnnnnnnn-nnnnn-nnnnnnnnnnnnnnnn-nnnnnnnnnnnnnnnnnnnnnnnn
+    Hippo           ggcgactctgccaaggcggcgggcgccaaggagcagagggactcagacttggcggccgagagtaacttccggatctaccc
+
+    DdelSJR         ttggatgcgaagctcaga------------------------------tacccgctatcagaccctggagctggagaagg
+    Gmac39091       ttggatgcgaagctcagggaccgaccgcaagcgaggtcgccagacctatacccgctatcagaccctggagctggagaagg
+    Ggri            ttggatgcgaagctcagggaccgaccgcaagcgaggtcgccagacctatacccgctatcagaccctggagctggagaagg
+    Oorc            ttggatgcgaagctcagggaccgaccgcaagcgaggtcgccagacctatacccgctatcagaccctggagctggagaagg
+    Pmac            ttggatgcgaagctcagggaccgaccgcaagcgaggtcgccagacctatacccgctatcagaccctggagctggagaagg
+    Pcra123188      ttggatgcgaagctcagggaccgaccgcaagcgaggtcgccagacctatacccgctatcagaccctggagctggagaagg
+    Scoe            ttggatgcgaagctcagggaccgaccgcaagcgaggtcgccagacctatacccgctatcagaccctggagctggagaagg
+    Ttru            nnnnnnnnnnnnnnnnnnnnnnnnnnnnn-n--n-nnnn-n-------nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Hippo           ctggatgcgaagctcagggacagaccgcaagcgaggtcgccagacctacacccgctatcagaccctggagctggagaagg
+
+    DdelSJR         agtttcactacaatcgctacctgacgcggcggcggcgcatcgagatcgcgcacgcgctctgcctcaccgaaagacagatc
+    Gmac39091       agtttcactacaatcgctacctgacgcggcggcggcgcatcgagatcgcgcacgcgctctgcctcaccgaaagacagatc
+    Ggri            agtttcactacaatcgctacctgacgcggcggcggcgcatcgagatcgcgcacgcgctctgcctcaccgaaagacagatc
+    Oorc            agtttcactacaatcgctacctgacgcggcggcggcgcatcgagatcgcgcacgcgctctgcctcaccgaaagacagatc
+    Pmac            agtttcactacaatcgctacctgacgcggcggcggcgcatcgagatcgcgcacgcgctctgcctcaccgaaagacagatc
+    Pcra123188      agtttcactacaatcgctacctgacgcggcggcggcgcatcgagatcgcgcacgcgctctgcctcaccgaaagacagatc
+    Scoe            agtttcactacaatcgctacctgacgcggcggcggcgcatcg--------------------------------------
+    Ttru            nnnnnnnnnnnnnnnnnnnnnnnnnn-nnn-nnnn-nnnnnnnnnnnn-nnnn-nnnnnnnnnn-nnnnnnnnnnnnnn-
+    Hippo           agtttcactacaatcgctacctgacgcggcggcggcgcatcgagatcgcgcacgcgctctgcctcaccgaaagacagatc
+
+    DdelSJR         aagatctggttccagaaccgccgcatgaagtg------------------------------------------------
+    Gmac39091       aagatctggttccagaaccgccgcatgaagtggaaaaaagagaacaagacagcgggccccggggccaccaggcaggacaa
+    Ggri            aagatctggtt---------------------------------------------------------------------
+    Oorc            aagatctggttccagaaccgccgc---------------------------------------------------atgaa
+    Pmac            aagatctggttccagaaccgccgcatgaagtggaaaaaagagaacaa---------------------------------
+    Pcra123188      aagatctggttccagaaccgccgca-------------------------------------------------------
+    Scoe            ----------------------------agatcgcgcacgcgctctgcctcaccgaaagacagatcaagatctggttcca
+    Ttru            ---nnnn----------nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Hippo           aagatctggttccagaaccggcgca---------------------------------------------------tgaa
+
+    DdelSJR         ---gaaaaaagagaacaagacagcgggcaccggggccaccaggcaggacaaggccgag-gcggaggaggacgaggaagag
+    Gmac39091       ggccgaggcggaggaggatgaggaagag----tga---------------------------------------------
+    Ggri            ----------ccagaaccgccgcatgaag-tggaaaaaagagaac---aagacagcgggccccggggccaccaggcagga
+    Oorc            gtggaaaaaagagaacaagacagcgggcc-ccggggccaccaggcaggacaaggccgaggcggaggaggacgaggaagag
+    Pmac            ------------------gacagcggg-ccccggggccaccaggcaggacaaggccgaggcggaggaggacgaggaagag
+    Pcra123188      --------tgaagtggaaaaaagagaaca-agacagcgggccccg---gggccac-------caggcaggacaag-----
+    Scoe            -------gaaccggcgcatgaagtggaa----gaaagacaacaa------------------------------------
+    Ttru            nnnnnnnnnnnnnnnnnnnnnnnnnnnnn-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+    Hippo           gtggaaaaaagagaacaagaccgcgggccc-cggggtcaccagccaggacaaggccgaggcggaggaggacgaggaagag
+
+    DdelSJR         tga-----
+    Gmac39091       --------
+    Ggri            caag----
+    Oorc            tga-----
+    Pmac            tga-----
+    Pcra123188      --------
+    Scoe            --------
+    Ttru            nnnnnnnn
+    Hippo           tga-----
+  ;
+END;
+

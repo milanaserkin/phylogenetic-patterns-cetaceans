@@ -1,0 +1,18 @@
+Species_Name,Tree_Tip_Label,Common_Name
+Balaenoptera_musculus,Bmus49099,Blue Whale
+Delphinapterus_leucas,Dleu,Beluga Whale
+Delphinus_delphis,Dcap108471,Common Dolphin
+Eschrichtius_robustus,Erob133443,Gray Whale
+Globicephala_melas,Gmel,Short-finned Pilot Whale
+Inia_geoffrensis,Igeo,Amazon River Dolphin
+Lagenorhynchus_obscurus,Lobs,Dusky Dolphin
+Megaptera_novaeangliae,Mnov,Humpback Whale
+Monodon_monoceros,Mmon,Narwhal
+Orcinus_orca,Oorc,Killer Whale/Orca
+Phocoena_phocoena,Ppho,Harbor Porpoise
+Physeter_macrocephalus,Pmac,Sperm Whale
+Pseudorca_crassidens,Pcra123188,False Killer Whale
+Tursiops_truncatus,Ttru,Bottlenose Dolphin
+Ziphius_cavirostris,Zcav,Cuvier's Beaked Whale
+Hippopotamus_amphibius,Hippo,Hippopotamus
+
