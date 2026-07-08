@@ -59,15 +59,30 @@ Future improvements to this pipeline could include:
 │   ├── languageConcat.nex                  # NEXUS formatted alignment for downstream analysis
 │   └── language-Raxml-part.txt             # Gene partition boundaries (AQP6, FBXO2, FOXP1, etc.)
 ├── scripts/
-│   ├── final.Rmd                           # MASTER NOTEBOOK: R code, bash commands, and pipeline execution
-│   ├── find_overlaps.py                    # Identifies shared species across datasets
-│   ├── checkoverlap.py                     # Compares and verifies dual taxa sets
-│   ├── filtertaxa.py                       # Extracts target taxa from master PHYLIP file
-│   ├── separate_sequences.py               # Splits master alignments into individual FASTA files
-│   ├── subset_fasta.py                     # Subsets specific language-relevant cetacean lineages
-│   ├── fix_lengths_post_alignment.py       # Tracks gap inserts and adjusts coordinates
-│   ├── trim_sequences.py                   # QA/QC: Truncates sequences to uniform length
-│   └── verify_order.py                     # QA/QC: Validates taxon order between input/output FASTA
+│   ├── final.Rmd                           # MASTER NOTEBOOK: R code, SLURM commands, and full phylogenetic pipeline
+│   │
+│   ├── data_prep_scripts/
+│   │   ├── clean_fasta_file.py             # Replaces invalid DNA characters with 'N' (Used in final pipeline)
+│   │   ├── clean_fasta_fully.py            # Deletes invalid characters entirely (Alternate draft, not used in final)
+│   │   ├── fix_lengths_post_alignment.py   # Recalculates partition boundaries by counting new alignment gaps
+│   │   ├── separate_sequences.py           # Splits a monolithic PHYLIP file into individual FASTA files
+│   │   ├── subset_fasta.py                 # Filters the master sequence file down to your target taxa
+│   │   └── trim_sequences.py               # Truncates all sequences to exactly 7,392 base pairs prior to alignment
+│   │
+│   ├── qc_and_validation/
+│   │   ├── check_fasta_cleaned.py          # Validates FASTA formatting, missing headers, and valid characters
+│   │   ├── check_lengths.py                # Uses Biopython to verify all sequences are uniform in length
+│   │   ├── check_taxa_fasta.py             # Utility to print out every species currently residing in a FASTA file
+│   │   ├── checkfiltering.py               # Cross-references FASTA and PHYLIP files to ensure no data was dropped
+│   │   ├── choose_best_sequence.py         # Calculates ambiguity percentage to pick the highest-quality dolphin sequence
+│   │   ├── compare_best_sequences.py       # Sorts all sequences from best to worst based on 'N' counts and gaps
+│   │   └── verify_order.py                 # Sanity check to ensure taxa order didn't scramble during alignment
+│   │
+│   └── exploratory_scripts/               
+│       ├── checkoverlap.py                 # Compares and verifies dual taxa sets using hardcoded lists
+│       ├── filtertaxa.py                   # Draft script for filtering taxa from a PHYLIP file
+│       ├── find_overlaps.py                # Advanced overlap check mapping full scientific names to nicknames
+│       └── taxanames.py                    # Extracts and prints a raw list of all species inside a PHYLIP file
 ├── results/
 │   ├── modelTest_results.txt               # Substitution model testing outputs (AIC/BIC)
 │   ├── RAxML_bestTree.cetaceansboot        # Primary dataset optimal tree
