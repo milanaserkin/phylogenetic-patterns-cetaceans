@@ -2,7 +2,7 @@
 
 **Project Overview**
 
-This repository contains the workflow, scripts, and phenotypic data used to explore the evolutionary trajectory of brain size and communication complexity across cetacean species. The goal of this project was to determine how many times large brain sizes and complex communication traits have independently evolved within cetacean lineages, utilizing *Hippopotamus amphibius* as an outgroup. This research provides insight into understanding the complexity of vocal and social aspects in cetaceans and can be applied to general knowledge on how brains have evolved to support advanced learning and communication.
+This repository contains the workflow, scripts, and phenotypic data used to explore the evolutionary trajectory of brain size and communication complexity across cetacean species. The goal of this project was to determine how many times large brain sizes and complex communication traits have independently evolved within cetacean lineages, utilizing *Hippopotamus amphibius* as an outgroup. This research provides insight into understanding the complexity of vocal and social aspects in cetaceans and can be applied to general knowledge on how brains have evolved to support advanced learning and communication. The raw phylogenetic sequence data (DATASET_B.phylip) was obtained from McGowen et al. (2020).
 
 ### Technical Stack
 * **Languages:** Python, R, Bash
