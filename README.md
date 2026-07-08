@@ -23,8 +23,6 @@ This repository contains the workflow, scripts, and phenotypic data used to expl
 
 <img width="913" height="641" alt="Screen Shot 2026-07-07 at 11 23 56 PM" src="https://github.com/user-attachments/assets/84eb24b1-6cd3-45b6-a53d-1442e6098fdc" />
 
-[Improved_RAxML_Tree.pdf](https://github.com/user-attachments/files/29811846/Improved_RAxML_Tree.pdf)
-
 Starting with data for 36 overlapping species, the dataset was filtered to 19 cetacean species and one outgroup (*Hippopotamus amphibius*) to maximize sequence quality under computational constraints. Seven genes of interest were isolated, uniformly truncated, and aligned via Clustal Omega. 
 
 **Phylogenetic Metrics**
