@@ -1,0 +1,465 @@
+---
+title: "final"
+output: pdf_document
+date: "`r Sys.Date()`"
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(msa)
+library(castor)
+library(phangorn)
+library(phytools)
+library(ape)
+```
+
+```{r}
+#Import the aligned sequence using Clustal Omega
+#module load clustal-omega/1.2.4
+#clustalo -i cetacean_final.fasta -o cetacean_alignment.fasta --threads=4
+
+alignedSeqs = readDNAStringSet("cetaceans_aligned.fasta")
+
+#Use phangorn to compare DNA substitution models
+forPhang = phyDat(as.matrix(alignedSeqs), type = "DNA")
+mt = modelTest(forPhang) # run a model test for all models(20+)
+write.table(mt, "modelTest_results.txt", quote=FALSE, sep="\t",row.names=FALSE, col.names=TRUE) #Write a table for results of mt test
+
+#D = dist.dna(dna, model="GTR", gamma=TRUE)
+```
+
+Partitioning the Ceteceans file
+```{r}
+#Prepwork for partitioning
+# Convert the alignment to a DNAMultipleAlignment object
+concat.aln = DNAMultipleAlignment(alignedSeqs)
+# Write the alignment to a Phylip and Nexus file for use in RAxML and MrBayes
+write.phylip(concat.aln, "cetaceansConcat.phy")
+write.nexus.data(as.DNAbin(concat.aln), file="cetaceansConcat.nex")
+
+#Create the Partition File for RAxML
+# Define the start and end positions for each gene
+#my.starts = c(1, 850, 1759, 3100, 4954, 5920, 6740)
+#my.ends = c(849, 1758, 3099, 4953, 5919, 6738, 7392)
+my.starts = c(1, 910, 1819, 3160, 5014, 5980, 6799)
+my.ends = c(909, 1818, 3159, 5013, 5979, 6798, 7452)
+# Define the gene names
+my.genes = c("AQP6", "FBXO2", "FGG", "FOXP1", "HOXA13", "HOXA9", "HOXB7")
+# Create formatted information for each gene
+info1 = paste(my.starts, my.ends, sep="-")
+info2 = paste(my.genes, info1, sep="=")
+info3 = paste("DNA,", info2, sep=" ")
+# Write the partition information to a file
+write.table(info3, file="cetaceans-Raxml-part.txt", quote=FALSE, row.names=FALSE, col.names=FALSE)
+```
+SLURM script for running RAxML
+```{r, engine='bash', eval=FALSE}
+#!/bin/bash
+#SBATCH --time=4:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=32GB
+#SBATCH --partition=Centaurus
+#SBATCH --mail-user=mserkin@uncc.edu
+#SBATCH --mail-type=ALL
+
+module load raxml
+
+raxmlHPC -s cetaceansConcat.phy \
+    -n cetaceansboot \
+    -f a \
+    -q cetaceans-Raxml-part.txt \
+    -M \
+    -m GTRGAMMAI \
+    -N 1000 \
+    -o Hippo \
+    -p 9503 -x 9004 \
+    >cetaceans_raxml_log.txt
+```
+Explaining the parameters for the slurm script:
+-s      the input alignment file
+-n      the name of the output files to be created 
+-f a    specifies a rapid bootstrap algorithm
+-m      the model we use (we have only used GTRGAMMA)
+-N      the number of bootstrap replicates to be performed
+-o      the outgroup for rooting the tree
+-p -x   random number seeds for the bootstrap and tree searching algorithms
+
+Plot the raxml-tree
+```{r raxml, fig.dim=c(8,8), fig.keep="last"}
+my.tree = read.tree("RAxML_bestTree.cetaceansboot")
+my.boot = read.tree("RAxML_bootstrap.cetaceansboot")
+x = plotBS(my.tree, my.boot, cex=0.7, main="RAxML Tree")
+plot(x)
+nodelabels(x$node.label, cex=0.7)
+
+print(x$node.label)
+```
+Continual ASR for Brain Size
+```{r asr-all-equal, fig.dim=c(8,8)}
+# Load your tree
+my.tree <- read.tree("RAxML_bestTree.cetaceansboot")
+plot(my.tree, main="Cetaceans RAxML Tree")
+
+# Define species names and log10 brain mass values
+species_names = c(
+  "Bbor", "Bmus49099", "Bphy_baits", "Cmar59905", "DdelSJR",
+  "Gmac39091", "Ggri", "Ksim", "Lalb", "Lobs",
+  "Lvex", "Meur", "Oorc", "Pmac", "Pcra123188",
+  "Scly1726", "Scoe", "Sbre116871", "Ttru", "Hippo"
+)
+
+log10_brain_mass = c(
+  3.693 , 3.827, 3.851, 3.104, 2.85, 3.43, 3.33, 2.801, 3.05, 2.94,
+  2.76, 3.23, 3.82, 3.89, 3.59, 2.81, 2.94, 3.16, 3.19, 2.77
+)
+
+names(log10_brain_mass) <- species_names
+
+# Ensure the tree tip labels and trait data align
+m <- match(my.tree$tip.label, names(log10_brain_mass))
+numeric_scores <- log10_brain_mass[m]
+
+# Use contMap to visualize the continuous trait with colors
+contMap_result <- contMap(my.tree, numeric_scores, plot=TRUE, fsize=0.8)
+
+# Customize colors for better readability
+contMap_result <- setMap(contMap_result, colors=rainbow(100, start=0, end=0.85))
+
+# Plot again with the updated color gradient
+plot(contMap_result)
+```
+
+Discrete ASR Graph for Brain Size (not used, just helped visually)
+```{r}
+# Load your tree
+my.tree = read.tree("RAxML_bestTree.cetaceansboot")
+plot(my.tree, main = "Cetaceans RAxML Tree")
+
+# Species names and log10 brain mass data
+species_names = c(
+  "Bbor", "Bmus49099", "Bphy_baits", "Cmar59905", "DdelSJR",
+  "Gmac39091", "Ggri", "Ksim", "Lalb", "Lobs",
+  "Lvex", "Meur", "Oorc", "Pmac", "Pcra123188",
+  "Scly1726", "Scoe", "Sbre116871", "Ttru", "Hippo"
+)
+
+log10_brain_mass = c(
+  3.693 , 3.827, 3.851, 3.104, 2.85, 3.43, 3.33, 2.801, 3.05, 2.94,
+  2.76, 3.23, 3.82, 3.89, 3.59, 2.81, 2.94, 3.16, 3.19, 2.77
+)
+
+# Assign species names as names for brain mass
+names(log10_brain_mass) = species_names
+
+# Align log10_brain_mass with tree tip labels
+m = match(my.tree$tip.label, names(log10_brain_mass))  # Match tree tip labels to brain mass names
+log10_brain_mass = log10_brain_mass[m]  # Rearrange brain mass in the correct order
+
+# Recalculate quantiles for discrete states
+quantiles = quantile(log10_brain_mass, probs = c(0, 0.25, 0.5, 0.75, 1))
+print(quantiles)  # Show the quantile breaks
+
+# Assign discrete scores (states) based on quantiles
+disc_scores = cut(
+  log10_brain_mass,
+  breaks = quantiles,
+  labels = c(1, 2, 3, 4),  # State 1, 2, 3, 4
+  include.lowest = TRUE
+)
+
+# Ensure names for disc_scores align with the tree tip labels
+names(disc_scores) = my.tree$tip.label
+
+# Verify alignment of data
+print(data.frame(
+  TipLabel = my.tree$tip.label,
+  BrainMass = log10_brain_mass,
+  DiscScore = disc_scores
+))
+
+# Ensure numeric states for ancestral state reconstruction
+numeric_states = as.numeric(as.factor(disc_scores))
+
+# Perform ancestral state reconstruction with equal transition costs
+mp_equal = asr_max_parsimony(
+  tree = my.tree,
+  tip_states = numeric_states,
+  Nstates = length(unique(numeric_states)),
+  transition_costs = "all_equal"
+)
+
+# Create a pie matrix for visualization
+pie_matrix = matrix(mp_equal$ancestral_likelihoods, ncol = length(unique(numeric_states)))
+rownames(pie_matrix) = seq(length(my.tree$tip.label) + 1, length(my.tree$tip.label) + nrow(pie_matrix))
+colnames(pie_matrix) = paste("State", 1:length(unique(numeric_states)))
+
+# Plot the tree with pie charts for each node
+state_labels = c(
+  "State 1: < 2.92",
+  "State 2: 2.92 - 3.39",
+  "State 3: 3.39 - 3.67",
+  "State 4: > 3.67"
+)
+
+# Plot tree and visualize results
+plotTree(my.tree, offset = 0.5, main = "Ancestral Reconstruction with Fixed Data")
+
+# Add pie charts to the tips
+tiplabels(
+  pie = to.matrix(disc_scores, sort(unique(disc_scores))),
+  piecol = c("navy", "skyblue", "green", "yellow"),
+  cex = 0.3
+)
+
+# Add pie charts to the nodes
+nodelabels(
+  node = as.numeric(rownames(pie_matrix)),
+  pie = pie_matrix,
+  piecol = c("navy", "skyblue", "green", "yellow"),
+  cex = 0.5
+)
+
+# Add legend
+legend(
+  "bottomright",
+  legend = state_labels,
+  fill = c("navy", "skyblue", "green", "yellow"),
+  bty = "n"
+)
+
+```
+
+
+LANGAUGE COMPLEXITY SUBSET:
+```{r}
+#ALIGN THE DATA
+#Import the aligned sequence using Clustal Omega
+#module load clustal-omega/1.2.4
+#clustalo -i language_ceteceans.fasta -o language_ceteceans_aligned.fasta --threads=4
+
+alignedSeqs = readDNAStringSet("language_ceteceans_aligned.fasta")
+
+#MODEL TEST
+#Use phangorn to compare DNA substitution models
+forPhang = phyDat(as.matrix(alignedSeqs), type = "DNA")
+mt = modelTest(forPhang) # run a model test for all models(20+)
+write.table(mt, "modelTest_results.txt", quote=FALSE, sep="\t",row.names=FALSE, col.names=TRUE) #Write a table for results of mt test
+
+#D = dist.dna(dna, model="GTR", gamma=TRUE)
+```
+
+Partitioning the Langauge subset file
+```{r}
+#Prepwork for partitioning
+# Convert the alignment to a DNAMultipleAlignment object
+concat.aln = DNAMultipleAlignment(alignedSeqs)
+# Write the alignment to a Phylip and Nexus file for use in RAxML and MrBayes
+write.phylip(concat.aln, "languageConcat.phy")
+write.nexus.data(as.DNAbin(concat.aln), file="languageConcat.nex")
+
+#Create the Partition File for RAxML
+# Define the start and end positions for each gene
+#my.starts = c(1, 850, 1759, 3100, 4954, 5920, 6740)
+#my.ends = c(849, 1758, 3099, 4953, 5919, 6738, 7392)
+my.starts = c(1, 906, 1815, 3156, 5010, 5976, 6795)
+my.ends = c(905, 1814, 3155, 5009, 5975, 6794, 7448)
+# Define the gene names
+my.genes = c("AQP6", "FBXO2", "FGG", "FOXP1", "HOXA13", "HOXA9", "HOXB7")
+# Create formatted information for each gene
+info1 = paste(my.starts, my.ends, sep="-")
+info2 = paste(my.genes, info1, sep="=")
+info3 = paste("DNA,", info2, sep=" ")
+# Write the partition information to a file
+write.table(info3, file="language-Raxml-part.txt", quote=FALSE, row.names=FALSE, col.names=FALSE)
+```
+SLURM script for running RAxML
+```{r, engine='bash', eval=FALSE}
+#!/bin/bash
+#SBATCH --time=4:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=32GB
+#SBATCH --partition=Centaurus
+#SBATCH --mail-user=mserkin@uncc.edu
+#SBATCH --mail-type=ALL
+
+module load raxml
+
+raxmlHPC -s languageConcat.phy \
+    -n languageboot \
+    -f a \
+    -q language-Raxml-part.txt \
+    -M \
+    -m GTRGAMMAI \
+    -N 1000 \
+    -o Hippo \
+    -p 9503 -x 9004 \
+    >language_raxml_log.txt
+```
+
+RAXML TREE Subset
+```{r fig.dim=c(8,8), fig.keep="last"}
+my.tree = read.tree("RAxML_bestTree.languageboot")
+my.boot = read.tree("RAxML_bootstrap.languageboot")
+x = plotBS(my.tree, my.boot, cex=0.8, main="RAxML Tree")
+plot(x)
+nodelabels(x$node.label, cex=0.7)
+```
+
+Discrete ASR for Language Complexity
+```{r}
+my.tree = read.tree("RAxML_bestTree.languageboot")
+
+species_names = c(
+  "DdelSJR", "Gmac39091",
+  "Ggri",
+  "Oorc", "Pmac", "Pcra123188",
+  "Scoe",
+  "Ttru", "Hippo"
+)
+
+# Create a vector for language complexity
+language_complexity = c( 8, 8, 7, 10, 10, 8, 9, 10, 6)
+
+names(language_complexity) = species_names
+m = match(my.tree$tip.label, names(language_complexity))
+language_complexity = language_complexity[m]
+
+# Assign discrete scores based on complexity
+my.complex = language_complexity
+my.complex[which(language_complexity == 6)] = 1  
+my.complex[which(language_complexity == 7)] = 2  
+my.complex[which(language_complexity == 8)] = 3 
+my.complex[which(language_complexity == 9)] = 4  
+my.complex[which(language_complexity == 10)] = 5  
+
+#Make sure these are in the same order as the tip labels
+m = match(my.tree$tip.label, names(my.complex)) 
+my.complex = my.complex[m]
+
+Q = matrix(data=c(
+  0,  2,  4,  6,  8,    
+  2,  0,  2,  4,  6,   
+  4,  2,  0,  2,  4,     
+  6,  4,  2,  0,  2,      
+  8,  6,  4,  2,  0    
+), nrow=5, byrow=TRUE, dimnames=list(c("1", "2", "3", "4", "5"), c("1", "2", "3", "4", "5")))
+
+my.complex = my.complex[m]
+
+# Check if the names match the tip labels in the tree
+tree_tip_labels = my.tree$tip.label
+
+# Ensure numeric states for ASR
+numeric_states = as.numeric(as.factor(my.complex))
+
+mp_custom = asr_max_parsimony(tree=my.tree, tip_states=numeric_states, Nstates=5, transition_costs=Q)
+
+
+pie.matrix = matrix(mp_custom$ancestral_likelihoods, ncol=5)
+rownames(pie.matrix) = seq(10,17) #(number of taxa+1, number of taxa+number of rows)
+colnames(pie.matrix) = c("1", "2", "3", "4", "5")
+plotTree(my.tree, offset=0.5, main="Ancestral Reconstruction with Custom Transition Costs")
+
+tiplabels(pie = to.matrix(numeric_states, sort(unique(numeric_states))), 
+          piecol=c("yellow","hotpink","seagreen",
+                   "skyblue","navy"), 
+          cex=0.3)
+nodelabels(node = as.numeric(rownames(pie.matrix)), 
+           pie=pie.matrix, piecol=c("yellow","hotpink","seagreen",
+                                     "skyblue","navy"),
+           cex=0.5)
+
+legend("bottomright", 
+       levels(as.factor(numeric_states)),
+       fill=c("yellow","hotpink","seagreen",
+              "skyblue","navy"),
+       bty="n", 
+       title = "Language
+      Complexity")
+```
+
+Discrete ASR for Brain Size
+```{r}
+my.tree = read.tree("RAxML_bestTree.languageboot")
+
+species_names = c(
+  "DdelSJR", "Gmac39091",
+  "Ggri",
+  "Oorc", "Pmac", "Pcra123188",
+  "Scoe",
+  "Ttru", "Hippo"
+)
+
+# Create a vector for language complexity
+log10_brain_mass = c(
+   2.85,
+  3.43, 3.33, 3.82, 3.89,
+  3.59, 2.94, 3.19, 2.77
+)
+
+#Make sure these are in the same order as the tip labels
+m = match(my.tree$tip.label, names(my.complex)) 
+my.complex = my.complex[m]
+
+names(log10_brain_mass) = species_names
+m = match(my.tree$tip.label, names(log10_brain_mass))
+log10_brain_mass = log10_brain_mass[m]
+
+# Assign discrete scores based on complexity
+disc_scores = log10_brain_mass
+disc_scores[which(log10_brain_mass < 2.89)] = 1  # State 1: < 2.89
+disc_scores[which(log10_brain_mass >= 2.89 & log10_brain_mass <= 3.08)] = 2  # State 2: 2.89 - 3.08
+disc_scores[which(log10_brain_mass > 3.08 & log10_brain_mass <= 3.36)] = 3  # State 3: 3.08 - 3.36
+disc_scores[which(log10_brain_mass > 3.36)] = 4  # State 4: > 3.36
+
+Q = matrix(data=c(
+  0,  2,  4,  6,    
+  2,  0,  2,  4,    
+  4,  2,  0,  2,       
+  6,  4,  2,  0
+), nrow=4, byrow=TRUE, dimnames=list(c("1", "2", "3", "4"), c("1", "2", "3", "4")))
+
+disc_scores = disc_scores[m]
+
+# Check if the names match the tip labels in the tree
+tree_tip_labels = my.tree$tip.label
+
+# Ensure numeric states for ASR
+numeric_states = as.numeric(as.factor(disc_scores))
+
+names(log10_brain_mass) = my.tree$tip.label
+
+# Reassign disc_scores with correct matching
+disc_scores = ifelse(
+    log10_brain_mass < 2.89, 1,
+    ifelse(log10_brain_mass <= 3.08, 2,
+           ifelse(log10_brain_mass <= 3.36, 3, 4)
+    )
+)
+
+# Verify names match
+names(disc_scores) = names(log10_brain_mass)
+
+mp_custom = asr_max_parsimony(tree=my.tree, tip_states=numeric_states, Nstates=4, transition_costs=Q)
+
+
+pie.matrix = matrix(mp_custom$ancestral_likelihoods, ncol=4)
+rownames(pie.matrix) = seq(10,17) #(number of taxa+1, number of taxa+number of rows)
+colnames(pie.matrix) = c("1", "2", "3", "4")
+
+plotTree(my.tree, offset=0.5, main="Ancestral Reconstruction with Custom Transition Costs")
+
+tiplabels(pie = to.matrix(disc_scores, sort(unique(disc_scores))),
+          piecol=c("yellow", "hotpink", "seagreen", "navy"),
+          cex=0.3)
+
+nodelabels(node = as.numeric(rownames(pie.matrix)),
+           pie = pie.matrix, piecol = c("yellow", "hotpink", "seagreen", "navy"),
+           cex = 0.5)
+
+legend("bottomright",
+       legend = c("< 2.89", "2.89 - 3.08", "3.08 - 3.36", "> 3.36"),
+       fill = c("yellow", "hotpink", "seagreen", "navy"),
+       bty = "n", title = "Brain Size")
+```
