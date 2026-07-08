@@ -6,7 +6,8 @@ This repository contains the workflow, scripts, and phenotypic data used to expl
 
 ### Technical Stack
 * **Languages:** Python, R, Bash
-* **Sequence Data:** Nucleotide sequences (FASTA, PHYLIP, NEXUS) for 7 targeted functional genes 
+* **Sequence Data:** Nucleotide sequences[Improved_RAxML_Tree.pdf](https://github.com/user-attachments/files/29811833/Improved_RAxML_Tree.pdf)
+ (FASTA, PHYLIP, NEXUS) for 7 targeted functional genes 
 * **Tools:** Biopython, Clustal Omega, RAxML, R (`phangorn`, `phytools`, `ape`)
 * **Infrastructure:** SLURM (High-Performance Computing cluster)
 
@@ -21,6 +22,8 @@ This repository contains the workflow, scripts, and phenotypic data used to expl
 ### Results
 
 <img width="913" height="641" alt="Screen Shot 2026-07-07 at 11 23 56 PM" src="https://github.com/user-attachments/assets/84eb24b1-6cd3-45b6-a53d-1442e6098fdc" />
+
+[Improved_RAxML_Tree.pdf](https://github.com/user-attachments/files/29811846/Improved_RAxML_Tree.pdf)
 
 Starting with data for 36 overlapping species, the dataset was filtered to 19 cetacean species and one outgroup (*Hippopotamus amphibius*) to maximize sequence quality under computational constraints. Seven genes of interest were isolated, uniformly truncated, and aligned via Clustal Omega. 
 
@@ -97,15 +100,19 @@ Future improvements to this pipeline could include:
 │       ├── find_overlaps.py                # Advanced overlap check mapping full scientific names to nicknames
 │       └── taxanames.py                    # Extracts and prints a raw list of all species inside a PHYLIP file
 ├── results/
-│   ├── modelTest_results.txt               # Substitution model testing outputs (AIC/BIC)
-│   ├── RAxML_bestTree.cetaceansboot        # Primary dataset optimal tree
-│   ├── RAxML_bestTree.languageboot         # Language subset optimal tree
-│   ├── RAxML_bootstrap.cetaceansboot       # Primary dataset bootstrap support values
-│   └── RAxML_bootstrap.languageboot        # Language subset bootstrap support values
+│   ├── model_testing/
+│   │   └── modelTest_results.txt             # AIC/BIC scores for substitution model selection
+│   │
+│   └── raxml_trees/
+│       ├── RAxML_bestTree.languageboot       # Final ML tree for 9-species language subset (Newick format)
+│       ├── RAxML_bootstrap.languageboot      # Raw bootstrap replicates for language subset
+│       ├── RAxML_bestTree.cetaceansboot      # Final ML tree for 20-species brain mass dataset
+│       ├── RAxML_bootstrap.cetaceansboot     # Raw bootstrap replicates for 20-species dataset
+│       └── RAxML_bestTree.cetaceansraxml     # Alternate ML tree run
 ├── figures/
-│   ├── firstrxml.png                       # Initial exploratory RAxML phylogenetic tree
-│   ├── secondRAxML.png                     # Secondary RAxML tree iteration
-│   ├── Improved_RAxML_Tree.pdf             # Polished phylogenetic tree with bootstrap values
-│   └── heatmap.png                         # Ancestral State Reconstruction (ASR) trait heatmap
-├── Final_Project_BINF_6205.pdf             # Full academic project report
-└── README.md                               # Project documentation
+│   ├── ASRbrain.png                         # Final brain mass evolutionary mapping
+│   ├── ASRlanguage.png                      # Final language complexity evolutionary mapping
+│   ├── Improved_RAxML_Tree.pdf              # Polished phylogenetic tree with bootstrap values
+│   └── heatmap.png                          # Genetic/trait distance matrix visualization
+├── Final_Project_BINF_6205.pdf              # Full academic project report
+└── README.md                                # Project documentation
